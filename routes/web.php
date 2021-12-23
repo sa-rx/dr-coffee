@@ -24,10 +24,10 @@ Route::get('controls', [App\Http\Controllers\ControlPanelController::class, 'ind
 Route::get('store', [App\Http\Controllers\StorePanelController::class, 'index'])->name('stores.index');
 
 
-Route::group(['middleware' => ['auth']], function() {
-  //  Route::resource('roles','App\Http\Controllers\RoleController');
-   // Route::resource('users','App\Http\Controllers\UserController');
-});
+//Route::group(['middleware' => ['auth']], function() {
+    Route::resource('roles','App\Http\Controllers\RoleController');
+    Route::resource('users','App\Http\Controllers\UserController');
+//});
 
 
 Route::resource('menu','App\Http\Controllers\MenuController');
