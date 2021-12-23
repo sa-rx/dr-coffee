@@ -25,8 +25,8 @@ Route::get('store', [App\Http\Controllers\StorePanelController::class, 'index'])
 
 
 Route::group(['middleware' => ['auth']], function() {
-    Route::resource('roles','App\Http\Controllers\RoleController');
-    Route::resource('users','App\Http\Controllers\UserController');
+  //  Route::resource('roles','App\Http\Controllers\RoleController');
+   // Route::resource('users','App\Http\Controllers\UserController');
 });
 
 
