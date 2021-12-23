@@ -10,9 +10,7 @@
 <h2>ادوار المستخدمين</h2>
 </div>
 <div class="pull-right">
-@can('الاصناف')
 <a class="btn btn-success" href="{{ route('roles.create') }}">انشاء صلاحيه</a>
-@endcan
 </div>
 </div>
 </div>
@@ -33,14 +31,11 @@
 <td>{{ $role->name }}</td>
 <td>
 <a class="btn btn-info" href="{{ route('roles.show',$role->id) }}">عرض</a>
-<!--@can('الاصناف') -->
 <a class="btn btn-primary" href="{{ route('roles.edit',$role->id) }}">تعديل</a>
-<!--@endcan -->
-<!--@can('اضافة صلاحيه') -->
+
 {!! Form::open(['method' => 'DELETE','route' => ['roles.destroy', $role->id],'style'=>'display:inline']) !!}
 {!! Form::submit('حذف', ['class' => 'btn btn-danger']) !!}
 {!! Form::close() !!}
-<!--@endcan -->
 </td>
 </tr>
 @endforeach
