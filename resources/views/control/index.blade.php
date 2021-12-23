@@ -98,7 +98,7 @@
                                 </div>
 
                                 <div class="col-md-4">
-                                    <a href="{{route('stores.index')}}" >
+                                    <a href="{{route('products.index')}}" >
                                         <h1  class="text-center  text-secondary"><button  style=" color: #060000;  border-color: #060000; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-tags fa-2x"></i> </button>  </h1>
                                     </a>
 
