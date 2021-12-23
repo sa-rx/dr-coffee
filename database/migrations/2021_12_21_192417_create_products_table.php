@@ -21,7 +21,7 @@ class CreateProductsTable extends Migration
             $table->unsignedInteger('price');
             $table->unsignedInteger('offer_price')->nullable();
             $table->unsignedTinyInteger('available')->default(1);
-            $table->string('img');
+            $table->string('img')->nullable();
 
 
             $table->timestamps();
