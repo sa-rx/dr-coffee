@@ -6,7 +6,7 @@
 
 <div class="container">
 
-<a  class="btn btn-outline-dark mx-auto mb-2" href="{{route('categories.create')}}"><i class="fas fa-plus-square"></i>  اضافة فئه </a>
+<a  class="btn btn-outline-light mx-auto mb-2" href="{{route('categories.create')}}"><i class="fas fa-plus-square"></i>  اضافة فئه </a>
 
 <div class="row">
 
@@ -15,7 +15,7 @@
            
 
 
-            <table class="table table-striped  table-hover  ">
+            <table class="table table-light table-striped  table-hover  ">
                     <thead  class="">
                         <tr>
                         
@@ -30,8 +30,8 @@
                         <tbody>
                         @forelse($categories as $category)
                             <tr>
-                            <td><a href="{{route('categories.show',$category)}}">{{$category->name}}</a></td>
-                                <td> <a class="btn btn-primary" href="{{route('categories.edit',$category)}}"><i class="fas fa-pen-square"></i>  </a> </td>
+                            <td><a class="text-dark" href="{{route('categories.show',$category)}}">{{$category->name}}</a></td>
+                                <td> <a class="btn btn-outline-primary" href="{{route('categories.edit',$category)}}"><i class="fas fa-pen-square"></i>  </a> </td>
                                 <td>
                                 
                                 <form method="post" action="{{route('categories.destroy',$category)}}"href="">

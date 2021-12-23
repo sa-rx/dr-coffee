@@ -4,35 +4,42 @@
 
 @section('content')
 
+
+
+
+
+
 <div class="container">
                 <div class="alert alert-light" role="alert">
                     <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
                         <li class="list-unstyled-item list-hours-item d-flex">
-                        الاسم: {{$menu->name}}
+                        <h3>{{$menu->name}}</h3>
                         </li>
 
                         <li class="list-unstyled-item list-hours-item d-flex">
-                        السعر:   {{$menu->price}}
+                        @if(isset($menu->offer_price))
+                       <h6> {{$menu->price}} ريال   |   العرض {{$menu->offer_price}} ريال  </h6>
+                       @else
+                       <h6> {{$menu->price}} ريال</h6>
+                       @endif
+                        </li>
+
+                       
+
+                        <li class="list-unstyled-item list-hours-item d-flex">
+                       
+                        <h6>  سعره حراريه  {{$menu->calories}}</h6>
                         </li>
 
                         <li class="list-unstyled-item list-hours-item d-flex">
-                        سعره حراريه:  {{$menu->offer_price}}
+                        
+                        <h6>  الفئه | {{$menu->category->name}}</h6>
                         </li>
 
-                        <li class="list-unstyled-item list-hours-item d-flex">
-                        سعره حراريه:   {{$menu->calories}}
-                        </li>
+                       
 
                         <li class="list-unstyled-item list-hours-item d-flex">
-                        الفئه:  {{$menu->category->name}}
-                        </li>
-
-                        <li class="list-unstyled-item list-hours-item d-flex">
-                        بواسطه:    {{$menu->user_id}}
-                        </li>
-
-                        <li class="list-unstyled-item list-hours-item d-flex">
-                         المحتوى:   {!! nl2br( $menu->content )!!}
+                         <h6>{!! nl2br( $menu->content )!!}</h6>
                         </li>
 
 

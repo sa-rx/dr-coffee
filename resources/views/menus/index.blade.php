@@ -5,9 +5,9 @@
 @section('content')
 
 <div class="container">
-<a  class="btn btn-outline-dark mx-auto mb-2" href="{{route('menu.create')}}"><i class="fas fa-plus-square"></i>  اضافة اصناف </a>
+<a  class=" btn btn-outline-light mx-auto mb-2" href="{{route('menu.create')}}"><i class="fas fa-plus-square"></i>  اضافة اصناف </a>
 
-<table class="table table-responsive-xl table-hover  ">
+<table class="table table-light table-responsive-xl table-hover  ">
                                     <thead  class="">
                                         <tr>
                                         
@@ -28,7 +28,7 @@
                                         <tbody>
                                             @forelse($menus as $menu)
                                             <tr>
-                                                <td ><a href="{{route('menu.show',$menu)}}">{{$menu->name}}</a></td>
+                                                <td ><a class="text-dark" href="{{route('menu.show',$menu)}}">{{$menu->name}}</a></td>
 
                                                 @if(isset($menu->offer_price))
                                                 <td><s class="text-danger">{{$menu->price}}</s> <b class="text-dark"></b>{{$menu->offer_price}}</td>

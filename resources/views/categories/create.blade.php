@@ -5,6 +5,14 @@
 @section('content')
 
 <div class="container">
+
+<div class="row justify-content-center">
+
+        <div class="col-md-12">
+            <div class="card" style="background-color: #4040406b;">
+              
+
+                <div class="card-body">
     <form class="" action="{{route('categories.store')}}" method="post">
       @csrf
         <div class="form-group">
@@ -18,4 +26,9 @@
 
     </form>
 </div>
+</div>
+</div>
+</div>
+</div>
+
 @endsection
