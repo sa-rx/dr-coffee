@@ -5,7 +5,8 @@
 @section('content')
 
 <div class="container">
-    
+<a  class="btn btn-outline-dark mx-auto mb-2" href="{{route('abouts.create')}}"><i class="fas fa-plus-square"></i>  اضافة فئه </a>
+
 <section class="page-section cta">
             <div class="container">
                 <div class="row">
