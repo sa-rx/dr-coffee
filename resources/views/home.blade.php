@@ -6,10 +6,10 @@
 
 <!-- ======= About Section ======= -->
 <section id="about" class="about">
-      <div class="container" >
+      <div class="container" data-aos="fade-up">
 
         <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" >
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
             <div class="about-img">
               <img src="assets/img/dr.jpg" alt="">
             </div>
@@ -32,7 +32,7 @@
 
     <!-- ======= Menu Section ======= -->
     <section id="menu" class="menu section-bg">
-      <div class="container" >
+      <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <p>المنيو</p>
@@ -53,7 +53,7 @@
           </div>
         </div>
 
-        <div class="row menu-container border border-secondary rounded" >
+        <div class="row menu-container border border-secondary rounded" data-aos="fade-up" data-aos-delay="200">
 
             
             @forelse($category->menus as $menu)
@@ -92,13 +92,13 @@
 
 <!-- ======= Events Section ======= -->
 <section id="events" class="events">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <p>العروض</p>
         </div>
 
-        <div class="events-slider swiper border border-secondary rounded container" >
+        <div class="events-slider swiper border border-secondary rounded container" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
 
 
