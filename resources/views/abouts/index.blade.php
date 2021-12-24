@@ -4,46 +4,57 @@
 
 @section('content')
 
-<div class="container">
-<a  class="btn btn-outline-dark mx-auto mb-2" href="{{route('abouts.create')}}"><i class="fas fa-plus-square"></i>  اضافة فئه </a>
-
-<section class="page-section cta">
-            <div class="container">
+<section id="specials" class="specials">
+      <div class="container" data-aos="fade-up">
+           <div class="card"  style="background-color: #4040406b;">
+           <br><br>
                 <div class="row">
 
                 @forelse($abouts as $about)
 
                     <div class="col-xl-9 mx-auto">
                         <div class="cta-inner bg-faded text-center rounded">
-                            <p class="mb-0">{{$about->title}}</p>
+                           
                             <div class="row">
 
                                 <div class="col-md-2">
+                                     <p>السناب : </p>
                                      <p class="mb-0">{{$about->snap}}</p>
                                 </div>
 
                                 <div class="col-md-2">
+                                    <p>الانستقرام : </p>
                                      <p class="mb-0">{{$about->inst}}</p>
                                 </div>
 
                                 <div class="col-md-2">
+                                     <p>الجوال : </p>
                                      <p class="mb-0">{{$about->number}}</p>
                                 </div>
 
                                 <div class="col-md-2">
+                                <p>رابط الموقع : </p>
                                      <p class="mb-0">{{$about->location}}</p>
                                 </div>
 
                                 <div class="col-md-2">
+                                <p> العنوان : </p>
                                      <p class="mb-0">{{$about->address}}</p>
                                 </div>
 
                                 <div class="col-md-12">
-                                     <p class="mb-0">{{$about->worktime}}</p>
+                                   <p>اوقات العمل : </p>
+                                     <p class="mb-0">{!! nl2br( $about->worktime )!!}</p>
+                                </div>
+
+                                <div class="col-md-12">
+
+                                   <p>المحتوى : </p>
+                                        <p class="mb-0">{!! nl2br( $about->content )!!}</p>
                                 </div>
 
                             </div>
-                            <p class="mb-0">   <a class="btn btn-primary" href="{{route('abouts.edit',$about)}}">تعديل  </a>  </p>
+                            <p class="mb-0">   <a class="btn  btn-outline-light" href="{{route('abouts.edit',$about)}}">تعديل  </a>  </p>
                         </div>
                     </div>
 
@@ -51,12 +62,14 @@
                           <p>لا توجد حجوزات</p>
                      @endforelse
 
-
+                </div>
+                
+<br>
+<br>
                 </div>
             </div>
         </section>
 
       
-</div>
 
 @endsection

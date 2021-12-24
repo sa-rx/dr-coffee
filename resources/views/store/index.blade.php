@@ -14,8 +14,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Specials</h2>
-          <p>Check Our Specials</p>
+          <p>منتجاتنا</p>
         </div>
 
         <div class="row">
@@ -43,13 +42,47 @@
           @endforelse
         </div>
 
-
-
-       
-
       </div>
     </section><!-- End Specials Section -->
 
+
+
+
+
+     <!-- ======= Why Us Section ======= -->
+     <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>منتجاتنا</h2>
+        </div>
+
+        <div class="row">
+          @forelse($products as $product)
+
+            <div class="col-lg-4">
+              <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                <span>{{$product->name}}</span>
+                <h4> {!! nl2br( $product->content )!!}</h4>
+
+                @if(isset($product->offer_price))
+                <p> {{$product->offer_price}} ريال</p>
+                <p > <s>{{$product->price}}ريال </s></p>
+                @else
+                <p class="">{{$product->price}} ريال</p>
+                @endif
+                <a class="btn btn-outline-light" href="{{route('products.show',$product)}}">{{$product->name}} </a>
+
+              </div>
+            </div>
+          @empty
+            <p>لا توجد خدمات</p>
+          @endforelse
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
 
 
 

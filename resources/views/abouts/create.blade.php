@@ -34,9 +34,9 @@
                     <input type="text" name="address" class="form-control">
                 </div>
 
-                <div class="form-group col-md-6">
+                <div class="form-group ">
                     <label for="content">المحتوى </label>
-                    <input type="text" name="content" class="form-control">
+                    <textarea type="text" name="content" class="form-control"></textarea>
                 </div>
               
                 <div class="form-group ">
@@ -49,7 +49,7 @@
 
 
                 <div class="form-group">
-                <button class="btn btn-primary">حجز</button>
+                <button class="btn btn-outline-light">حجز</button>
            </div>
     </form>
 </div>

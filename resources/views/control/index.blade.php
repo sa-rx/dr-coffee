@@ -5,8 +5,7 @@
 <section id="contact" class="contact">
     <div class="container" data-aos="fade-up">
             <div class="section-title">
-                <h2>Contact</h2>
-                <p>Contact Us</p>
+                <h2>لوحة التحكم</h2>
             </div> 
                 <div class="row">
                     <div class="col-xl-9 mx-auto">

@@ -19,11 +19,7 @@
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
             <h3>{{ config('app.name') }}</h3>
             <p class="fst-italic">
-            {{$about->content}}
-            </p>
-           
-            <p>
-            {{$about->title}}
+            {!! nl2br( $about->content )!!}
             </p>
           </div>
         </div>
@@ -37,7 +33,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <p>المنيو</p>
+          <h2>المنيو</h2>
         </div>
 
         <div class="row" data-aos="fade-up" >
@@ -97,8 +93,9 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <p>العروض</p>
+          <h2>العروض</h2>
         </div>
+        
 
         <div class="events-slider swiper border border-secondary rounded container" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
@@ -115,7 +112,7 @@
                     <p><span>${{$offer->price}}</span></p>
                   </div>
                   <p class="fst-italic">
-                  {{$offer->content}}
+                  {!! nl2br( $offer->content )!!}
                   </p>
                 </div>
               </div>

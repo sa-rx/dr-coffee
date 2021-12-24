@@ -9,8 +9,8 @@
 <section id="contact" class="contact">
     <div class="container" data-aos="fade-up">
             <div class="section-title">
-                <h2>Contact</h2>
-                <p>Contact Us</p>
+                <h2>تواصل معنا</h2>
+             
             </div> 
         
 

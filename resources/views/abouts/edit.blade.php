@@ -49,9 +49,9 @@
                                 <input type="text" name="address" class="form-control" @isset($about) value="{{$about->address}}" @endisset>
                             </div>
 
-                            <div class="form-group col-md-6">
+                            <div class="form-group ">
                                 <label for="content">المحتوى </label>
-                                <input type="text" name="content" class="form-control" @isset($about) value="{{$about->content}}" @endisset>
+                                <textarea type="text" name="content" class="form-control" >{{$about->content}} </textarea>
                             </div>
                         
                             <div class="form-group ">
