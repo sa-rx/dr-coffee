@@ -112,7 +112,7 @@
                 <div class=" content" style="margin: 11px 30px 0 0;">
                   <h3>{{$offer->title}}</h3>
                   <div class="price">
-                    <p><span>{{$offer->price}}</span></p>
+                    <p><span>${{$offer->price}}</span></p>
                   </div>
                   <p class="fst-italic">
                   {{$offer->content}}
