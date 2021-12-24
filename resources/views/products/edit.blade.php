@@ -3,8 +3,16 @@
 @section('title', '  تعديل اصناف')
 
 @section('content')
-
+ 
 <div class="container">
+
+<div class="row justify-content-center">
+
+        <div class="col-md-12">
+            <div class="card" style="background-color: #4040406b;">
+              
+
+                <div class="card-body">
     <form class="" action="{{route('products.update',$product)}}" method="post" enctype="multipart/form-data">
       @csrf
       @method('PATCH')
@@ -50,10 +58,14 @@
 
                             
         <div class="form-group">
-            <button class="btn btn-success"> <i class="fas fa-plus-square"></i> تعديل </button>
+            <button class="btn btn-outline-light"> <i class="fas fa-plus-square"></i> تعديل </button>
         </div>
 
     </form>
+    </div>
+</div>
+</div>
+</div>
 </div>
 
 

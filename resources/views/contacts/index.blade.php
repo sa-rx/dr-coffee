@@ -6,7 +6,7 @@
 
 <div class="container">
 
-<table class="table table-striped table-hover  ">
+<table class="table table-striped table-light table-hover  ">
                                     <thead  class="">
                                         <tr>
                                         
@@ -24,7 +24,7 @@
                                         <tbody>
                                             @forelse($contacts as $contact)
                                             <tr>
-                                                <td><a href="{{route('contacts.show',$contact)}}"> {{$contact->name}}</a></td>
+                                                <td><a class="text-dark" href="{{route('contacts.show',$contact)}}"> {{$contact->name}}</a></td>
                                                 <td>{{$contact->email}}</td>
                                                 <td>{{$contact->content}}</td>
                                              

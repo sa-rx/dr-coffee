@@ -9,6 +9,17 @@ use Illuminate\Support\Facades\File;
 
 class ProductController extends Controller
 {
+
+    
+    function __construct()
+    {
+        $this->middleware('permission:المنتجات|اضافة منتج', ['only' => ['index']]);
+        $this->middleware('permission:اضافة منتج|تعديل منتج', ['only' => ['create','store']]);
+        $this->middleware('permission:تعديل منتج', ['only' => ['edit','update']]);
+        $this->middleware('permission:حذف منتج', ['only' => ['destroy']]);
+    }
+
+
     /**
      * Display a listing of the resource.
      *

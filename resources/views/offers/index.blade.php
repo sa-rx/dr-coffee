@@ -5,9 +5,9 @@
 @section('content')
 
 <div class="container">
-<a  class="btn btn-outline-dark mx-auto mb-2" href="{{route('offers.create')}}"><i class="fas fa-plus-square"></i>  اضافة عرض </a>
+<a  class="btn btn-outline-light mx-auto mb-2" href="{{route('offers.create')}}"><i class="fas fa-plus-square"></i>  اضافة عرض </a>
  
-    <table class="table table-striped  table-hover  ">
+    <table class="table table-light table-striped  table-hover  ">
 
         <thead  class="">
             <tr>                            
@@ -22,7 +22,7 @@
         <tbody>
              @forelse($offers as $offer)
              <tr>
-                <td><a href="{{route('offers.show',$offer)}}"> {{$offer->title}}</a></td>
+                <td><a  class="text-dark" href="{{route('offers.show',$offer)}}"> {{$offer->title}}</a></td>
                 <td>{{$offer->price}}</td>
                                                 
 
@@ -35,13 +35,13 @@
                                                 
 
 
-                <td> <a class="btn btn-primary" href="{{route('offers.edit',$offer)}}"><i class="fas fa-pen-square"></i>  </a> </td>
+                <td> <a class="btn btn-outline-primary" href="{{route('offers.edit',$offer)}}"><i class="fas fa-pen-square"></i>  </a> </td>
 
                 <td>
                     <form method="post" action="{{route('offers.destroy',$offer)}}"href="">
                         @method('delete')
                         @csrf
-                        <button onclick="return confirm('هل انت متأكد؟')" class="btn btn-danger" > <i class="fas fa-trash-alt"></i></button>
+                        <button onclick="return confirm('هل انت متأكد؟')" class="btn btn-outline-danger" > <i class="fas fa-trash-alt"></i></button>
                     </form>
                 </td>
 

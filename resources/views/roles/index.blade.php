@@ -10,7 +10,10 @@
 <h2>ادوار المستخدمين</h2>
 </div>
 <div class="pull-right">
+@can('اضافة صلاحيه')
 <a class="btn btn-success" href="{{ route('roles.create') }}">انشاء صلاحيه</a>
+@endcan 
+
 </div>
 </div>
 </div>
@@ -19,7 +22,7 @@
 <p>{{ $message }}</p>
 </div>
 @endif
-<table class="table table-bordered">
+<table class="table table-light table-responsive-xl table-hover  ">
 <tr>
 <th>#</th>
 <th>الاسم</th>
@@ -30,12 +33,20 @@
 <td>{{ ++$i }}</td>
 <td>{{ $role->name }}</td>
 <td>
+@can('عرض صلاحيه')
 <a class="btn btn-info" href="{{ route('roles.show',$role->id) }}">عرض</a>
-<a class="btn btn-primary" href="{{ route('roles.edit',$role->id) }}">تعديل</a>
+@endcan 
 
+@can('تعديل صلاحيه')
+<a class="btn btn-primary" href="{{ route('roles.edit',$role->id) }}">تعديل</a>
+@endcan 
+
+@can('حذف صلاحيه')
 {!! Form::open(['method' => 'DELETE','route' => ['roles.destroy', $role->id],'style'=>'display:inline']) !!}
 {!! Form::submit('حذف', ['class' => 'btn btn-danger']) !!}
 {!! Form::close() !!}
+@endcan 
+
 </td>
 </tr>
 @endforeach
@@ -43,5 +54,4 @@
 </div>
 
 {!! $roles->render() !!}
-<p class="text-center text-primary"><small>Tutorial by rscoder.com</small></p>
 @endsection

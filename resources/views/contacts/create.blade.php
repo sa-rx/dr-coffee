@@ -61,7 +61,7 @@
 
                 <div id="demo" class="collapse">
                     <p class="text-center">{{$about->address}}</p>
-                    <p class="text-center"><a  class="text-center  nav-link" href="{{$about->location}}">موقع المقهى</a></p>
+                     <p class="text-center"><a  class="text-center  nav-link" href="{{$about->location}}">موقع المقهى</a></p>
                 </div>
             </div>
 
@@ -127,7 +127,7 @@
 
                 <br>
                 <div class="form-group">
-                    <button class="btn btn-outline-dark"> ارسال <i class="fas fa-paper-plane"></i>   </button>
+                    <button class="btn btn btn-outline-light"> ارسال <i class="fas fa-paper-plane"></i>   </button>
                 </div>
             </div>
             </form>

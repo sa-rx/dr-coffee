@@ -3,8 +3,16 @@
 @section('title', '  اضافة منتج')
 
 @section('content')
-
+ 
 <div class="container">
+
+<div class="row justify-content-center">
+
+        <div class="col-md-12">
+            <div class="card" style="background-color: #4040406b;">
+              
+
+                <div class="card-body">
     <form class="" action="{{route('products.store')}}" method="post" enctype="multipart/form-data">
       @csrf
 
@@ -47,10 +55,14 @@
 
                             
         <div class="form-group">
-            <button class="btn btn-success"> <i class="fas fa-plus-square"></i> اضافة </button>
+            <button class="btn btn-outline-light"> <i class="fas fa-plus-square"></i> اضافة </button>
         </div>
 
     </form>
+    </div>
+</div>
+</div>
+</div>
 </div>
 
 

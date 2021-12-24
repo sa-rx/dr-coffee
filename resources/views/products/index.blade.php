@@ -5,9 +5,9 @@
 @section('content')
 
 <div class="container">
-<a  class="btn btn-outline-dark mx-auto mb-2" href="{{route('products.create')}}"><i class="fas fa-plus-square"></i>  اضافة منتج </a>
+<a  class="btn btn-outline-light mx-auto mb-2" href="{{route('products.create')}}"><i class="fas fa-plus-square"></i>  اضافة منتج </a>
 
-<table class="table table-responsive-xl table-hover  ">
+<table class="table table-light table-responsive-xl table-hover  ">
                                     <thead  class="">
                                         <tr>
                                         <th scope="col"> الصوره</th>
@@ -29,7 +29,7 @@
                                                 <td >
                                                     <img src="{{asset('images/products/'.$product->img)}}" width="70px" height="70px"; alt="{{$product->name}}">
                                                 </td>
-                                                <td ><a href="{{route('products.show',$product)}}">{{$product->name}}</a></td>
+                                                <td ><a class="text-dark" href="{{route('products.show',$product)}}">{{$product->name}}</a></td>
 
                                                
                                                 <td>{{$product->price}}</td>

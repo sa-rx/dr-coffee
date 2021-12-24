@@ -5,6 +5,14 @@
 @section('content')
 
 <div class="container">
+
+<div class="row justify-content-center">
+
+        <div class="col-md-12">
+            <div class="card" style="background-color: #4040406b;">
+              
+
+                <div class="card-body">
 <form action="{{route('abouts.update',$about)}}" method="post">
                             @csrf
                             @method('PATCH')
@@ -48,17 +56,22 @@
                         
                             <div class="form-group ">
                             <label for="worktime">اوقات العمل</label>
-                            <textarea name="worktime" class="form-control" @isset($about) value="{{$about->worktime}}" @endisset></textarea>
+                            <textarea name="worktime" class="form-control" >{{$about->worktime}}</textarea>
                             </div>
 
                           
                         
 
                             <div class="form-group">
-                                <button class="btn btn-success">اضافة</button>
+                                <button class="btn btn-outline-light">اضافة</button>
                             </div>
                             </div>
                         </form>
+                        </div>
 </div>
+</div>
+</div>
+</div>
+
 
 @endsection

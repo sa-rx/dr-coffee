@@ -21,7 +21,7 @@
         </div>
                             
         <div class="form-group">
-            <button class="btn btn-success"> <i class="fas fa-plus-square"></i> اضافة </button>
+            <button class="btn btn-outline-light"> <i class="fas fa-plus-square"></i> اضافة </button>
         </div>
 
     </form>

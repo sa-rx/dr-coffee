@@ -4,21 +4,27 @@
 
 @section('content')
 
-    <div class="container">
+<section id="testimonials" class="testimonials section-bg">
+        <div class="container" data-aos="fade-up">
+         
+            <div class="alert alert-light container" role="alert">
     <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
                                                     <li class="list-unstyled-item list-hours-item d-flex">
-                                                    {{$contact->name}}
+                                                    الاسم : {{$contact->name}}
                                                        
                                                     </li>
                                                     <li class="list-unstyled-item list-hours-item d-flex">
-                                                    {{$contact->email}}
+                                                    الايميل : {{$contact->email}}
                                                        
                                                     </li>
                                                     <li class="list-unstyled-item list-hours-item d-flex">
-                                                    {{$contact->content}}
+                                                    الرساله : {{$contact->content}}
                                                        
                                                     </li>
     </ul>
     </div>
+    </div>
+    </section>
+
 
 @endsection
