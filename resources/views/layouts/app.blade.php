@@ -43,8 +43,8 @@
     <!--<script src="{{ asset('js/app.js') }}" defer></script> -->
 
     <!-- Fonts -->
-    <!--<link rel="dns-prefetch" href="//fonts.gstatic.com">-->
-    <!--<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">-->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
      <!--<link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
@@ -54,6 +54,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
      <!--<link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.0.0/css/bootstrap.min.css" integrity="sha384-P4uhUIGk/q1gaD/NdgkBIl3a6QywJjlsFJFk7SPRdruoGddvRVSwv5qFnvZ73cpz" crossorigin="anonymous"> -->
 
+
+     <style >
+      
+      body{
+       font-family:"Cairo", sans-serif;
+  
+      }
+ 
+   </style>
 </head>
 <body>
 
