@@ -45,7 +45,7 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="menu-flters">
 
-                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter="*" class="filter-active">الكل</li>
                 @forelse($categories as $category)
                 <li data-filter=".filter-{{$category->id}}">{{$category->name}}</li>
                 @empty
