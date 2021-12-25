@@ -73,10 +73,11 @@
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top d-flex align-items-cente">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
-
-      <h1 class="logo me-auto me-lg-0"><a class="navbar-brand" href="{{ url('/') }}"> {{ config('app.name', 'Laravel') }}</a></h1>
+    
+    <h1  class="logo  me-lg-0"><a class="navbar-brand" href="{{ url('/') }}"> {{ config('app.name', 'Laravel') }}</a></h1>
+      <!--<a class="navbar-brand col-2  " href="{{ url('/') }}"> <img style=" border-radius: 50%;   width:39px;" src="assets/img/apple-touch-icon.png" alt=""> </a>-->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <!--       <a href="{{ url('/') }}" class="logo me-auto me-lg-0"><img  style=" border-radius: 50%;   width:39px;" src="assets/img/apple-touch-icon.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>

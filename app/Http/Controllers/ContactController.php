@@ -52,7 +52,7 @@ class ContactController extends Controller
     {
         $contact = new Contact();
         $contact->create($request->all());
-        return  redirect()->to('contacts')->with('message','تمت ارسال بياناتك بنجاح');
+        return redirect()->back()->with('message','تمت ارسال بياناتك بنجاح');
     }
 
     /**

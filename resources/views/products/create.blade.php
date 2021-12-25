@@ -42,10 +42,7 @@
         </div>
 
 
-        <div class="form-group">
-            <label for="img" class="form-label">رفع الصوره</label>
-            <input class="form-control" type="file"  name="img" id="img" >
-        </div>
+      
 
  
         <div class="form-group">

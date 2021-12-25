@@ -28,6 +28,11 @@
     </section><!-- End About Section -->
 
 
+
+
+
+
+    
     <!-- ======= Menu Section ======= -->
     <section id="menu" class="menu section-bg">
       <div class="container" data-aos="fade-up">
@@ -55,26 +60,26 @@
             
             @forelse($menus as $menu)
 
-                @if($menu->available == 0)
-
-                @else
+               
                   <div   class="col-lg-6 menu-item filter-{{$menu->category_id}}" >
                       
                       <div class="menu-content">
                       @if(isset($menu->offer_price))
-                          <a href="#">{{$menu->name}}</a><span><s class="text-danger">{{$menu->price}}</s> {{$menu->offer_price}}</span>
+                          <a href="{{route('menu.show',$menu)}}">{{$menu->name}}</a><span><s class="text-danger">{{$menu->price}}</s> ${{$menu->offer_price}}</span>
                       @else
-                          <a href="#">{{$menu->name}}</a><span>{{$menu->price}}</span>
+                          <a href="#">{{$menu->name}}</a><span>${{$menu->price}}</span>
                       @endif
                         </div>
                       <div class="menu-ingredients">
-                          {{$menu->content}}         
-
+                      @if($menu->available == 0)
+                          <p>غير متوفر</p>         
+                          @else
+                          @endif
                       </div>
                       <br>
           <br>
                   </div>
-                @endif
+                
             @empty
             <p>لا يوجد شيئ </p>
             @endforelse  

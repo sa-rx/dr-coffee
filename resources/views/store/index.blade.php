@@ -62,7 +62,7 @@
 
             <div class="col-lg-4">
               <div class="box" data-aos="zoom-in" data-aos-delay="100">
-                <span>{{$product->name}}</span>
+                <span>                <a  href="{{route('products.show',$product)}}">{{$product->name}} </a></span>
                 <h4> {!! nl2br( $product->content )!!}</h4>
 
                 @if(isset($product->offer_price))
@@ -71,7 +71,15 @@
                 @else
                 <p class="">{{$product->price}} ريال</p>
                 @endif
-                <a class="btn btn-outline-light" href="{{route('products.show',$product)}}">{{$product->name}} </a>
+                <a class="btn btn-outline-light" target="_blank" href=" https://wa.me/966556781462?text=المنتج : {{$product->name}}%20
+                @if(isset($product->offer_price))
+                سعر العرض : {{$product->offer_price}}
+                @else
+                السعر : {{$product->price}}%20
+                @endif
+                ">للطلب</a>
+
+              
 
               </div>
             </div>

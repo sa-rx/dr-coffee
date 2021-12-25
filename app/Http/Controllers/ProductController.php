@@ -57,15 +57,15 @@ class ProductController extends Controller
         $product->offer_price = $request->input('offer_price');
         $product->available = $request->input('available');
         
-            if($request->hasfile('img'));
-            {
-                $file = $request->file('img');
-                $extension = $file->getClientOriginalExtension();
-                $fileNmae = time().'.'.$product->name.'.'.$request->img->extension();
-                $file->move(public_path('images/products'),$fileNmae);
-                $product->img =$fileNmae;
+           // if($request->hasfile('img'));
+          //  {
+            //    $file = $request->file('img');
+            //    $extension = $file->getClientOriginalExtension();
+             //   $fileNmae = time().'.'.$product->name.'.'.$request->img->extension();
+              //  $file->move(public_path('images/products'),$fileNmae);
+              //  $product->img =$fileNmae;
               
-            }
+          //  }
         $product->save();
         return redirect()->to('products')->with('message','تمت اضافة المنتج بنجاح');
 
@@ -111,20 +111,20 @@ class ProductController extends Controller
         $product->offer_price = $request->input('offer_price');
         $product->available = $request->input('available');
         
-            if($request->hasfile('img'));
-            {
-                $destination = 'images/products/'.$product->img;
-                if(File::exists($destination))
-                {
-                    File::delete($destination);
-                }
-                $file = $request->file('img');
-                $extension = $file->getClientOriginalExtension();
-                $fileNmae = time().'.'.$product->name.'.'.$request->img->extension();
-                $file->move(public_path('images/products/'),$fileNmae);
-                $product->img =$fileNmae;
+           // if($request->hasfile('img'));
+           // {
+             //   $destination = 'images/products/'.$product->img;
+             //   if(File::exists($destination))
+              //  {
+              //      File::delete($destination);
+              //  }
+               // $file = $request->file('img');
+              //  $extension = $file->getClientOriginalExtension();
+              //  $fileNmae = time().'.'.$product->name.'.'.$request->img->extension();
+              //  $file->move(public_path('images/products/'),$fileNmae);
+              //  $product->img =$fileNmae;
               
-            }
+           // }
 
 
             
@@ -143,11 +143,11 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        $destination = 'images/products/'.$product->img;
-            if(File::exists($destination))
-            {
-                File::delete($destination);
-            }
+       // $destination = 'images/products/'.$product->img;
+           // if(File::exists($destination))
+           // {
+           //     File::delete($destination);
+           // }
         $product->delete();
         return redirect()->to('products')->with('message','تمت حذف المنتج بنجاح');
 

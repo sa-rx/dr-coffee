@@ -15,8 +15,7 @@ class Product extends Model
         'content',
         'price',
         'offer_price',
-        'available',
-        'img'
+        'available'
     ];
 }
 
