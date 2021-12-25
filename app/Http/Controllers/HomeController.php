@@ -30,8 +30,8 @@ class HomeController extends Controller
     {
         $categories = Category::orderBy('id','ASC')->get();
         $offers = Offer::whereAvailable('1')->orderBy('id','DESC')->get();
-       // $menu = Menu::categories();
+       $menus = Menu::orderBy('id','ASC')->get();
        $about = About::find(1);
-        return view('home',compact('categories','offers','about'));
+        return view('home',compact('categories','offers','about','menus'));
     }
 }

@@ -42,7 +42,7 @@
 
                 <li data-filter="*" class="filter-active">All</li>
                 @forelse($categories as $category)
-                <li data-filter=".{{$category->name}}" >{{$category->name}}</li>
+                <li data-filter=".filter-{{$category->id}}">{{$category->name}}</li>
                 @empty
                 <p>لا يوجد شيئ </p>
                 @endforelse 
@@ -52,23 +52,34 @@
         </div>
 
         <div class="row menu-container border border-secondary rounded" data-aos="fade-up" data-aos-delay="200">
-
             
-            @forelse($category->menus as $menu)
-            <div   class="col-lg-6 menu-item   {{$menu->category->name}}  " >
-                
-                <div class="menu-content">
-                    <a href="#">{{$menu->name}}</a><span>${{$menu->price}}</span>
-                </div>
-                <div class="menu-ingredients">
-                    {{$menu->content}}
-                </div>
-            </div>
+            @forelse($menus as $menu)
+
+                @if($menu->available == 0)
+
+                @else
+                  <div   class="col-lg-6 menu-item filter-{{$menu->category_id}}" >
+                      
+                      <div class="menu-content">
+                      @if(isset($menu->offer_price))
+                          <a href="#">{{$menu->name}}</a><span><s class="text-danger">{{$menu->price}}</s> {{$menu->offer_price}}</span>
+                      @else
+                          <a href="#">{{$menu->name}}</a><span>{{$menu->price}}</span>
+                      @endif
+                        </div>
+                      <div class="menu-ingredients">
+                          {{$menu->content}}         
+
+                      </div>
+                      <br>
+          <br>
+                  </div>
+                @endif
             @empty
             <p>لا يوجد شيئ </p>
             @endforelse  
 
-          
+         
 
         </div>
         
