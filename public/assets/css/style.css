@@ -170,7 +170,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  top: 40px;
 }
 #header.header-scrolled {
   top: 0;
@@ -243,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
+  padding: 9px 92px 11px 30px;
   color: #fff;
   white-space: nowrap;
   transition: 0.3s;
@@ -255,7 +254,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #d9ba85;
+  color: #ffffff;
 }
 .navbar .dropdown ul {
   display: block;

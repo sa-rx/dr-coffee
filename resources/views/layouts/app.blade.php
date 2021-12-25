@@ -70,47 +70,29 @@
 
 
 
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm order-last order-lg-0 ">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
+      <h1 class="logo me-auto me-lg-0"><a class="navbar-brand" href="{{ url('/') }}"> {{ config('app.name', 'Laravel') }}</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-                    <li class="nav-item">
-                        <a class="nav-link scrollto active" href="{{ url('/') }}">الرئيسيه</a>
-                    </li>    
-                   
-                    <li class="nav-item">
-                          <a class="nav-link" href="{{ route('stores.index') }}">المتجر</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('contacts.create') }}">عن المقهى</a>
-                    </li>
-
-                    <li class="nav-item">
-                          <a class="nav-link scrollto" href="{{ route('opinions.create') }}">الاراء</a>
-                    </li>
-                    
-                    @can('لوحة التحكم')
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+           
+          <li><a class="nav-link scrollto active" href="{{ url('/') }}">الرئيسيه</a></li>
+          <li><a class="nav-link" href="{{ route('stores.index') }}">المتجر</a></li>
+          <li><a class="nav-link" href="{{ route('contacts.create') }}">عن المقهى</a></li>
+          <li><a class="nav-link scrollto" href="{{ route('opinions.create') }}">الاراء</a></li>
+           @can('لوحة التحكم')
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('controls.index') }}">لوحة التحكم</a>
                     </li>
-                    @endcan
+            @endcan
+          
+         
 
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
-                        <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
@@ -124,29 +106,58 @@
                                 </li>
                             @endif
                         @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
+                            <li class="dropdown"><a href="#"><span>  {{ Auth::user()->name }}</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li>
+                                        <div >
+                                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                                        onclick="event.preventDefault();
+                                                                        document.getElementById('logout-form').submit();">
+                                                            {{ __('Logout') }}
+                                                        </a>
+
+                                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                            @csrf
+                                                        </form>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </li> 
                         @endguest
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        </ul>
 
+        
+        
+
+
+
+
+
+
+
+
+
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+
+
+
+
+
+
+
+
+    <div id="app">
+     
         <main class="py-4">
 
         <div class="container">
