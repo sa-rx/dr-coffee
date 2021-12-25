@@ -38,7 +38,7 @@
             </a>
 
             <div id="demo" class="collapse">
-                <p class="text-center"><a  class="text-center nav-link" href="https://www.instagram.com/{{$about->inst}}">  {{$about->inst}}   </a> </p>
+                <p class="text-center"><a   target="_blank" class="text-center " href="https://www.instagram.com/{{$about->inst}}">  {{$about->inst}}   </a> </p>
             </div>
             </div>
 
@@ -49,7 +49,7 @@
             </a>
 
             <div id="demo" class="collapse">
-                <p class="text-center"><a class="text-center  nav-link"  href="http://story.snapchat.com/u/{{$about->snap}}"> {{$about->snap}}</a></p>
+                <p class="text-center"><a  target="_blank" class="text-center "  href="http://story.snapchat.com/u/{{$about->snap}}"> {{$about->snap}}</a></p>
             </div>
             </div>
 
@@ -61,7 +61,7 @@
 
                 <div id="demo" class="collapse">
                     <p class="text-center">{{$about->address}}</p>
-                     <p class="text-center"><a  class="text-center  nav-link" href="{{$about->location}}">موقع المقهى</a></p>
+                     <p class="text-center"><a   target="_blank" class="text-center  " href="{{$about->location}}">موقع المقهى</a></p>
                 </div>
             </div>
 

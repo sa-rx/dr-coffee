@@ -37,6 +37,27 @@
                                 </div>
 
                                 <div class="col-md-4">
+                                    <a href="{{route('offers.index')}}" >
+                                        <h1  class="text-center  text-secondary"><button  style=" color: #060000;  border-color: #060000; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-tags fa-2x"></i> </button>  </h1>
+                                    </a>
+
+                                    <div id="demo" >
+                                        <p class="text-center" >العروض </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <a href="{{route('products.index')}}" >
+                                        <h1  class="text-center  text-secondary"><button  style=" color: #060000;  border-color: #060000; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-store fa-2x"></i> </button>  </h1>
+                                    </a>
+
+                                    <div id="demo" >
+                                        <p class="text-center" >المتجر </p>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-4">
                                     <a href="{{route('abouts.index')}}" >
                                         <h1  class="text-center  text-secondary"><button  style=" color: #060000;  border-color: #060000; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-address-card fa-2x"></i> </button>  </h1>
                                     </a>
@@ -85,30 +106,6 @@
                                         <p class="text-center" > ادارة ادوار المستخدمين </p>
                                     </div>
                                 </div>
-
-                                <div class="col-md-4">
-                                    <a href="{{route('offers.index')}}" >
-                                        <h1  class="text-center  text-secondary"><button  style=" color: #060000;  border-color: #060000; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-tags fa-2x"></i> </button>  </h1>
-                                    </a>
-
-                                    <div id="demo" >
-                                        <p class="text-center" >العروض </p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4">
-                                    <a href="{{route('products.index')}}" >
-                                        <h1  class="text-center  text-secondary"><button  style=" color: #060000;  border-color: #060000; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-tags fa-2x"></i> </button>  </h1>
-                                    </a>
-
-                                    <div id="demo" >
-                                        <p class="text-center" >المتجر </p>
-                                    </div>
-                                </div>
-
-
-
-
 
                                 </div>  
 

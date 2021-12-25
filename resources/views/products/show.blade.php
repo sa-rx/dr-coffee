@@ -38,12 +38,16 @@
                             </li>
                         @endif
 
-
+                        <a class="btn btn-outline-dark" target="_blank" href=" https://wa.me/966556781462?text=المنتج : {{$product->name}}
+                            %20 @if(isset($product->offer_price))
+                            سعر العرض : {{$product->offer_price}}
+                            @else
+                            السعر : {{$product->price}}%20
+                            @endif
+                            ">للطلب
+                        </a>
                         
-                        <li class="list-unstyled-item list-hours-item d-flex">
-                        <img src="{{asset('images/products/'.$product->img)}}" width="70px" height="70px"; alt="{{$product->name}}">
-                        </li>
-
+                        
                     </ul>
                 </div>
             </div>
