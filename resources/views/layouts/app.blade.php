@@ -83,7 +83,7 @@
            
           <li><a class="nav-link scrollto active" href="{{ url('/') }}">الرئيسيه</a></li>
           <li><a class="nav-link" href="{{ route('stores.index') }}">المتجر</a></li>
-          <li><a class="nav-link" href="{{ route('contacts.create') }}">عن المقهى</a></li>
+          <li><a class="nav-link" href="{{ route('contacts.create') }}">تواصل معنا</a></li>
           <li><a class="nav-link scrollto" href="{{ route('opinions.create') }}">الاراء</a></li>
            @can('لوحة التحكم')
                     <li class="nav-item">
