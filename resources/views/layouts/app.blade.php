@@ -175,7 +175,7 @@
             @endif
 
             @if(session('message'))
-                <div class="alert alert-warning">
+                <div class="alert alert-light">
                 {{session('message')}}
                 </div>
             @endif

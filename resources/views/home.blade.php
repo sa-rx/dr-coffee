@@ -34,7 +34,7 @@
 
     
     <!-- ======= Menu Section ======= -->
-    <section id="menu" class="menu section-bg">
+    <section id="menu" class="menu container section-bg border border-dark rounded">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -114,15 +114,15 @@
         
 
         <div class="events-slider swiper border border-secondary rounded container" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper ">
 
 
           @forelse($offers as $offer)
 
-            <div class="swiper-slide">
+            <div class="swiper-slide ">
               <div class="row event-item">
                 
-                <div class=" content" style="margin: 11px 30px 0 0;">
+                <div class=" content " style="margin: 11px 30px 0 0;">
                   <h3>{{$offer->title}}</h3>
                   <div class="price">
                     <p><span>${{$offer->price}}</span></p>
