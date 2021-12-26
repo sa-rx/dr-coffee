@@ -37,6 +37,6 @@ Route::resource('opinions','App\Http\Controllers\OpinionController');
 Route::resource('abouts','App\Http\Controllers\AboutController');
 Route::resource('contacts','App\Http\Controllers\ContactController');
 Route::resource('products','App\Http\Controllers\ProductController');
-
+Route::resource('certificates','App\Http\Controllers\CertificateController');
 
 
