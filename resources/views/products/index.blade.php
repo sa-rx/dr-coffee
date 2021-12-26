@@ -10,7 +10,6 @@
 <table class="table table-light table-responsive-xl table-hover  ">
                                     <thead  class="">
                                         <tr>
-                                        <th scope="col"> الصوره</th>
                                         <th scope="col">اسم المنتج</th>
                                         <th scope="col " >السعر</th>
                                         <th scope="col">العرض</th>
@@ -26,9 +25,7 @@
                                             @forelse($products as $product)
                                             <tr>
                                                 
-                                                <td >
-                                                    <img src="{{asset('images/products/'.$product->img)}}" width="70px" height="70px"; alt="{{$product->name}}">
-                                                </td>
+                                                
                                                 <td ><a class="text-dark" href="{{route('products.show',$product)}}">{{$product->name}}</a></td>
 
                                                

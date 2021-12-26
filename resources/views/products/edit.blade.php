@@ -43,12 +43,7 @@
         </div>
 
 
-        <div class="form-group">
-            <label for="img" class="form-label">رفع الصوره</label>
-            <input class="form-control" type="file"  name="img" id="img" >
-            <img src="{{asset('images/products/'.$product->img)}}" width="70px" height="70px"; alt="{{$product->name}}">
-
-        </div>
+        
 
 
         <div class="form-group">
