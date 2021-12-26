@@ -29,7 +29,9 @@
                 @else
                 <p class="">{{$product->price}} ريال</p>
                 @endif
-                <a class="btn btn-outline-light" target="_blank" href=" https://wa.me/966556781462?text=المنتج : {{$product->name}}
+               
+
+                <a class="btn btn-outline-light" target="_blank" href=" https://wa.me//966{{$about->number}}?text=المنتج : {{$product->name}}
                 %20 @if(isset($product->offer_price))
                 سعر العرض : {{$product->offer_price}}
                 @else
