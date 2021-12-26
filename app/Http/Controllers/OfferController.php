@@ -48,6 +48,13 @@ class OfferController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+
+            'name'=>'required',
+            'price'=>'required'
+        ]);
+
+
         $offer = new Offer();
         $offer->create($request->all());
         return  redirect()->to('offers')->with('message','تمت اضافة العرض بنجاح');
@@ -87,6 +94,7 @@ class OfferController extends Controller
      */
     public function update(Request $request, Offer $offer)
     {
+        
         $offer->update($request->all());
         return  redirect()->to('offers')->with('message','تمت تعديل العرض بنجاح');
     }

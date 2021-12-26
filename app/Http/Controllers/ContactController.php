@@ -50,6 +50,14 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
+
+        $request->validate([
+
+            'name'=>'required',
+            'content'=>'required'
+        ]);
+
+        
         $contact = new Contact();
         $contact->create($request->all());
         return redirect()->back()->with('message','تمت ارسال بياناتك بنجاح');

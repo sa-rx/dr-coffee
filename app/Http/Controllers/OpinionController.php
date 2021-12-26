@@ -46,6 +46,13 @@ class OpinionController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+
+            'name'=>'required',
+            'content'=>'required'
+        ]);
+
+
         $opinion = new Opinion();
         $opinion->create($request->all());
         return redirect()->to('opinions')->with('message','تمت اضافة رايك بنجاح');

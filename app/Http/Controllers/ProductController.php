@@ -50,6 +50,12 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+
+            'name'=>'required',
+            'price'=>'required'
+        ]);
+
         $product = new Product;
         $product->name = $request->input('name');
         $product->content = $request->input('content');
@@ -105,6 +111,12 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
+        $request->validate([
+
+            'name'=>'required',
+            'price'=>'required'
+        ]);
+        
         $product->name = $request->input('name');
         $product->content = $request->input('content');
         $product->price = $request->input('price');
