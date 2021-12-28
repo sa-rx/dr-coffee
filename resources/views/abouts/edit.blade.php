@@ -5,29 +5,18 @@
 @section('content')
 
 <div class="container">
-
-<div class="row justify-content-center">
-
+    <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card" style="background-color: #4040406b;">
-              
-
                 <div class="card-body">
-<form action="{{route('abouts.update',$about)}}" method="post">
-                            @csrf
-                            @method('PATCH')
-
-                            <div class="row">
-
-
+                    <form action="{{route('abouts.update',$about)}}" method="post">
+                        @csrf
+                        @method('PATCH')
+                        <div class="row">
                             <div class="form-group col-md-6">
                                 <label for="snap">سناب</label>
                                 <input type="text" name="snap" class="form-control"  @isset($about) value="{{$about->snap}}" @endisset>
                             </div>
-                            
-
-                            
-
                                         
                             <div class="form-group col-md-6">
                                 <label for="inst">انستا</label>
@@ -55,22 +44,20 @@
                             </div>
                         
                             <div class="form-group ">
-                            <label for="worktime">اوقات العمل</label>
-                            <textarea name="worktime" class="form-control" >{{$about->worktime}}</textarea>
+                                <label for="worktime">اوقات العمل</label>
+                                <textarea name="worktime" class="form-control" >{{$about->worktime}}</textarea>
                             </div>
-
-                          
-                        
 
                             <div class="form-group">
                                 <button class="btn btn-outline-light">اضافة</button>
                             </div>
-                            </div>
-                        </form>
+
                         </div>
-</div>
-</div>
-</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 

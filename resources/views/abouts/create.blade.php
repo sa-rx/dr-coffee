@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="container">
-<form  action="{{route('abouts.store')}}" method="post">
+    <form  action="{{route('abouts.store')}}" method="post">
             <div class="row">
 
                 @csrf
@@ -40,17 +40,15 @@
                 </div>
               
                 <div class="form-group ">
-                <label for="worktime">اوقات العمل</label>
-                <textarea name="worktime" class="form-control"></textarea>
+                    <label for="worktime">اوقات العمل</label>
+                    <textarea name="worktime" class="form-control"></textarea>
                 </div>
 
-
-
-
-
                 <div class="form-group">
-                <button class="btn btn-outline-light">حجز</button>
-           </div>
+                  <button class="btn btn-outline-light">حجز</button>
+                </div>
+
+            </div>
     </form>
 </div>
 

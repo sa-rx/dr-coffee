@@ -73,118 +73,91 @@
 <header id="header" class="fixed-top d-flex align-items-cente">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
     
-    <h1  class="logo  me-lg-0"><a class="navbar-brand" href="{{ url('/') }}"> {{ config('app.name', 'Laravel') }}</a></h1>
-      <!--<a class="navbar-brand col-2  " href="{{ url('/') }}"> <img style=" border-radius: 50%;   width:39px;" src="assets/img/apple-touch-icon.png" alt=""> </a>-->
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!--       <a href="{{ url('/') }}" class="logo me-auto me-lg-0"><img  style=" border-radius: 50%;   width:39px;" src="assets/img/apple-touch-icon.png" alt="" class="img-fluid"></a>-->
+        <h1  class="logo  me-lg-0"><a class="navbar-brand" href="{{ url('/') }}"> {{ config('app.name', 'Laravel') }}</a></h1>
+        <!--<a class="navbar-brand col-2  " href="{{ url('/') }}"> <img style=" border-radius: 50%;   width:39px;" src="assets/img/apple-touch-icon.png" alt=""> </a>-->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!--       <a href="{{ url('/') }}" class="logo me-auto me-lg-0"><img  style=" border-radius: 50%;   width:39px;" src="assets/img/apple-touch-icon.png" alt="" class="img-fluid"></a>-->
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-           
-          <li><a class="nav-link scrollto active" href="{{ url('/') }}">الرئيسيه</a></li>
-          <li><a class="nav-link" href="{{ route('stores.index') }}">المتجر</a></li>
-          <li><a class="nav-link" href="{{ route('contacts.create') }}">تواصل معنا</a></li>
-          <li><a class="nav-link scrollto" href="{{ route('opinions.create') }}">الاراء</a></li>
-          <li><a class="nav-link scrollto" href="{{ route('certificates.create') }}">إصدار الشهادات</a></li>
+        <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+            
+            <li><a class="nav-link scrollto active" href="{{ url('/') }}">الرئيسيه</a></li>
+            <li><a class="nav-link" href="{{ route('stores.index') }}">المتجر</a></li>
+            <li><a class="nav-link" href="{{ route('contacts.create') }}">تواصل معنا</a></li>
+            <li><a class="nav-link scrollto" href="{{ route('opinions.create') }}">الاراء</a></li>
+            <li><a class="nav-link scrollto" href="{{ route('certificates.create') }}">إصدار الشهادات</a></li>
 
-           @can('لوحة التحكم')
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('controls.index') }}">لوحة التحكم</a>
-                    </li>
+            @can('لوحة التحكم')
+            <li class="nav-item">
+                    <a class="nav-link" href="{{ route('controls.index') }}">لوحة التحكم</a>
+            </li>
             @endcan
-          
-         
 
-                        @guest
-                            @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                </li>
-                            @endif
+                @guest
+                    @if (Route::has('login'))
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        </li>
+                    @endif
 
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
+                    @if (Route::has('register'))
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                        </li>
+                    @endif
+                @else
 
+                <li class="dropdown"><a href="#"><span>  {{ Auth::user()->name }}</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li>
+                            <div >
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                                document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
 
-                            <li class="dropdown"><a href="#"><span>  {{ Auth::user()->name }}</span> <i class="bi bi-chevron-down"></i></a>
-                                <ul>
-                                    <li>
-                                        <div >
-                                                        <a class="dropdown-item" href="{{ route('logout') }}"
-                                                        onclick="event.preventDefault();
-                                                                        document.getElementById('logout-form').submit();">
-                                                            {{ __('Logout') }}
-                                                        </a>
-
-                                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                                            @csrf
-                                                        </form>
-                                        </div>
-                                    </li>
-                                    
-                                </ul>
-                            </li> 
-                        @endguest
-        </ul>
-
-        
-        
-
-
-
-
-
-
-
-
-
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </li> 
+                @endguest
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
       <!-- .navbar -->
-
     </div>
   </header><!-- End Header -->
 
-  <br>
-<br>
-<br>
-
-
-
-
-
-
+    <br>
+    <br>
+    <br>
 
 
     <div id="app">
      
         <main class="py-4">
+            <div class="container">
+                @if($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach($errors->all() as $error)
+                                <li>{{$error}}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
 
-        <div class="container">
-            @if($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach($errors->all() as $error)
-                            <li>{{$error}}</li>
-                        @endforeach
-                    </ul>
+                @if(session('message'))
+                    <div class="alert alert-light">
+                        {{session('message')}}
+                    </div>
+                @endif
             </div>
-
-            @endif
-
-            @if(session('message'))
-                <div class="alert alert-light">
-                {{session('message')}}
-                </div>
-            @endif
-        </div>
-
             @yield('content')
-
         </main>
     </div>
 
