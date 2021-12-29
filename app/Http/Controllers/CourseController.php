@@ -16,7 +16,7 @@ class CourseController extends Controller
      */
     public function index()
     {
-        $courses = Course::orderBy('available','ASC')->get();
+        $courses = Course::get();
         return view('courses.index',compact('courses'));
     }
 
