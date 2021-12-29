@@ -22,6 +22,8 @@ Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('controls', [App\Http\Controllers\ControlPanelController::class, 'index'])->name('controls.index');
 Route::get('store', [App\Http\Controllers\StorePanelController::class, 'index'])->name('stores.index');
+Route::get('view-course', [App\Http\Controllers\CoursesController::class, 'index'])->name('course.index');
+Route::get('show-course/{course}', [App\Http\Controllers\CoursesController::class, 'show'])->name('course.show');
 
 
 //Route::group(['middleware' => ['auth']], function() {
@@ -38,5 +40,8 @@ Route::resource('abouts','App\Http\Controllers\AboutController');
 Route::resource('contacts','App\Http\Controllers\ContactController');
 Route::resource('products','App\Http\Controllers\ProductController');
 Route::resource('certificates','App\Http\Controllers\CertificateController');
+Route::resource('courses','App\Http\Controllers\CourseController');
+Route::resource('participations','App\Http\Controllers\ParticipationController');
+
 
 

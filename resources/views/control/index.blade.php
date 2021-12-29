@@ -57,6 +57,24 @@
                             </div>
 
                             <div class="col-md-6">
+                                <a href="{{route('courses.index')}}" >
+                                    <h1  class="text-center  text-secondary"><button  style=" color: #060000;  border-color: #060000; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-certificate fa-2x"></i> </button>  </h1>
+                                </a>
+                                <div id="demo" >
+                                    <p class="text-center" >الكورسات </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <a href="{{route('participations.index')}}" >
+                                    <h1  class="text-center  text-secondary"><button  style=" color: #060000;  border-color: #060000; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-certificate fa-2x"></i> </button>  </h1>
+                                </a>
+                                <div id="demo" >
+                                    <p class="text-center" >المتدربين </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
                                 <a href="{{route('abouts.index')}}" >
                                     <h1  class="text-center  text-secondary"><button  style=" color: #060000;  border-color: #060000; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-address-card fa-2x"></i> </button>  </h1>
                                 </a>
