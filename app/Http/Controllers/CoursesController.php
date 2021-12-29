@@ -10,7 +10,7 @@ class CoursesController extends Controller
 {
     public function index()
     {           
-        $courses = Course::orderBy('id','ASC')->get();
+        $courses = Course::get();
         return view('course.index',compact('courses'));
     }
 
