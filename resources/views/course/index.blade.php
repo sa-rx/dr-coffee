@@ -36,14 +36,14 @@
               <p>يبدأ الكورس في {{$course->date}}</p>
 
 
-              <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapse{{$course->id}}" role="button" aria-expanded="false" aria-controls="collapseExample">
               سجل الان
               </a>
               
               <br>
               <br>
               
-                      <div class="collapse" id="collapseExample">
+                      <div class="collapse" id="collapse{{$course->id}}">
                         <div class="">
                         <div class="section-title">
                             <br>
