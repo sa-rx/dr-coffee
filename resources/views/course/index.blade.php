@@ -34,10 +34,68 @@
               @endif
             
               <p>يبدأ الكورس في {{$course->date}}</p>
-              <a class="btn btn-dark" href="{{route('course.show',$course)}}"> سجل الان </a>
 
+
+              <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              سجل الان
+              </a>
+              
+              <br>
+              <br>
+              
+                      <div class="collapse" id="collapseExample">
+                        <div class="">
+                        <div class="section-title">
+                            <br>
+                            <br>
+                            <h2>ادخل بياناتك للتسجيل</h2>
+                          </div>
+
+                        
+                        <form action="{{route('participations.store')}}" method="post">
+                            @csrf
+                            <input type="hidden" name="course_id" value="{{$course->id}}">
+
+                            <div class="row">
+                                @csrf
+                                <div class="form-group col-md-12">
+                                    <label for="name">الاسم </label>
+                                    <input type="text" name="name" class="form-control">
+                                </div>
+
+
+
+                                <div class="form-group ">
+                                    <label for="email">الايميل</label>
+                                    <input type="email" name="email" class="form-control">
+                                </div>
+
+                                <div class="form-group ">
+                                    <label for="number">رقم الجوال</label>
+                                    <input type="text" name="number" class="form-control">
+                                </div>
+
+                                    <br>
+                                    <br>
+                                <div class="form-group">
+                                        <button class="btn btn btn-outline-light"> ارسال <i class="fas fa-paper-plane"></i>   </button>
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                      </div>
+
+
+                  <div class="collapse">
+                          
+                  
+                         
+                  </div>
+               
             </div>
           </div>
+
+          
 
           
         @endif
