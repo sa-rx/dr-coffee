@@ -87,7 +87,9 @@
             <li><a class="nav-link scrollto" href="{{ route('opinions.create') }}">الاراء</a></li>
             <li><a class="nav-link scrollto" href="{{ route('course.index') }}">الكورسات</a></li>
             <li><a class="nav-link scrollto" href="{{ route('events.create') }}">تنظيم فعاليه</a></li>
+            <li><a class="nav-link scrollto" href="{{ route('franchises.create') }}"> الامتياز التجاري</a></li>
 
+            
 
             
             @can('لوحة التحكم')
