@@ -5,8 +5,10 @@
 @section('content')
 
 <div class="container">
-
-    <table class="table table-striped table-light table-hover  ">
+            <div style=" color: #122c14;" class="pull-left">
+                <h2> الرسائل</h2>
+            </div>
+    <table  style=" color: #98a175; "  class="table table-striped table-light table-hover  ">
         <thead  class="">
             <tr>
                 <th scope="col">الاسم</th>

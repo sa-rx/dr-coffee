@@ -6,7 +6,7 @@
 
 <div class="container">
 
-    <table class="table table-striped table-light table-hover  ">
+    <table  style=" color: #98a175; "  class="table table-striped table-light table-hover  ">
         <thead  class="">
             <tr>
                 <th scope="col">الاسم</th>
@@ -15,7 +15,7 @@
                 <th scope="col"> تاريخ التدريب </th>
                 <th scope="col">حذف</th>
             </tr>
-        </thead>
+        </thead> 
 
         <tbody>
             @forelse($certificates as $certificate)

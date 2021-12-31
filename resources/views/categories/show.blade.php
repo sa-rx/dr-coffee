@@ -5,19 +5,19 @@
 @section('content')
 
     
-
+ 
     
 <!-- ======= Menu Section ======= -->
 <section id="menu" class="menu section-bg">
-    <div class="container" data-aos="fade-up">
+    <div class="container section-bg" data-aos="fade-up">
         <div class="container">
             <h1> {{$category->name}}</h1> 
     </div>
-        <div class="row menu-container border border-secondary rounded" data-aos="fade-up" data-aos-delay="200">
+        <div class="row menu-container  rounded" data-aos="fade-up" data-aos-delay="200">
             @forelse($category->menus as $menu)
                 <div  class="col-lg-6 menu-item   filter-{{$menu->category->name}}">
                     <div class="menu-content">
-                        <a href="#">{{$menu->name}}</a><span>${{$menu->price}}</span>
+                        <a href="{{route('menu.show',$menu)}}">{{$menu->name}}</a><span>${{$menu->price}}</span>
                     </div>
 
                     <div class="menu-ingredients">

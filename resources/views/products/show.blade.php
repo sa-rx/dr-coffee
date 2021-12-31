@@ -4,9 +4,9 @@
 
 @section('content')
 
-<div class="container">
-    <div class="alert alert-light" role="alert">
-        <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+<div class="container" data-aos="fade-up">
+    <div class="alert section-bg rounded" role="alert">
+        <ul style="    color: #f1e4c6;" class="list-unstyled list-hours mb-5 text-left mx-auto">
             <li class="list-unstyled-item list-hours-item d-flex">
                 <h3> {{$product->name}}</h3>
             </li>
@@ -33,7 +33,7 @@
                 </li>
             @endif
 
-            <a class="btn btn-outline-dark" target="_blank" href=" https://wa.me/966556781462?text=المنتج : {{$product->name}}
+            <a class="btn btn-outline-light" target="_blank" href=" https://wa.me/966556781462?text=المنتج : {{$product->name}}
                 %20 @if(isset($product->offer_price))
                 سعر العرض : {{$product->offer_price}}
                 @else

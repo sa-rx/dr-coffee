@@ -6,7 +6,10 @@
 
 <section id="specials" class="specials">
      <div class="container" data-aos="fade-up">
-          <div class="card"  style="background-color: #4040406b;">
+          <div style=" color: #122c14;" class="pull-left">
+                <h2>بيانات المقهى</h2>
+            </div>
+          <div class="card"  style="background-color: #98a175;">
                 <br><br>
                <div class="row">
                     @forelse($abouts as $about)

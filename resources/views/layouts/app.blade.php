@@ -70,7 +70,7 @@
 
 
 <!-- ======= Header ======= -->
-<header id="header" class="fixed-top d-flex align-items-cente">
+<header id="header" class="fixed-top d-flex align-items-cente ">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
     
         <h1  class="logo  me-lg-0"><a class="navbar-brand" href="{{ url('/') }}"> {{ config('app.name', 'Laravel') }}</a></h1>
@@ -86,6 +86,8 @@
             <li><a class="nav-link" href="{{ route('contacts.create') }}">تواصل معنا</a></li>
             <li><a class="nav-link scrollto" href="{{ route('opinions.create') }}">الاراء</a></li>
             <li><a class="nav-link scrollto" href="{{ route('course.index') }}">الكورسات</a></li>
+            <li><a class="nav-link scrollto" href="{{ route('certificates.create') }}">اصدار الشهادات</a></li>
+
             <li><a class="nav-link scrollto" href="{{ route('events.create') }}">تنظيم فعاليه</a></li>
             <li><a class="nav-link scrollto" href="{{ route('franchises.create') }}"> الامتياز التجاري</a></li>
 

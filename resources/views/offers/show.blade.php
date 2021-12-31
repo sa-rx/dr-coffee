@@ -4,18 +4,21 @@
 
 @section('content')
 
-<div class="container">
-    <div class="alert alert-light" role="alert">
-        <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+
+<div class="container section-bg rounded"  data-aos="fade-up">    
+        <ul style="    color: #f1e4c6;" class="list-unstyled list-hours mb-5 text-left mx-auto">
+            <br><br>
             <li class="list-unstyled-item list-hours-item d-flex">
-                {{$offer->title}}
+               <h3> {{$offer->title}}</h3>
             </li>
 
             <li class="list-unstyled-item list-hours-item d-flex">
-                {{$offer->price}}
+                {{$offer->price}} ريال
             </li>
 
             <li class="list-unstyled-item list-hours-item d-flex">
+            المحتوى:
+               
                 {!! nl2br( $offer->content )!!}
             </li>
 
@@ -29,6 +32,8 @@
                     غير متوفر
                 </li>
             @endif
+            <br><br>
+
         </ul>
     </div>
 </div>

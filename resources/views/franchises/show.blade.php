@@ -6,7 +6,7 @@
  
     <section id="testimonials" class="testimonials section-bg">
         <div class="container" data-aos="fade-up">
-            <div class="alert alert-light container" role="alert">
+            <div style="    background-color: #f1e4c6;     color: #768856;       border-color: #768856; " class="alert container" role="alert">
                 <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
                     <li class="list-unstyled-item list-hours-item d-flex">
                         الاسم : {{$franchise->name}}
@@ -22,29 +22,34 @@
 
 
                     <li class="list-unstyled-item list-hours-item d-flex">
-                        {{$franchise->qualification}}
+                    المؤهل الاكاديمي او التخصص :  {{$franchise->qualification}}
                     </li>
                     <li class="list-unstyled-item list-hours-item d-flex">
-                       {{$franchise->commercial_experie}}
+                    سنوات الخبره : {{$franchise->commercial_experie}}
                     </li>
                     <li class="list-unstyled-item list-hours-item d-flex">
-                         {{$franchise->area}}
+                    المنطقة المقترحة لبدء الامتياز :{{$franchise->area}}
                     </li>
                     <li class="list-unstyled-item list-hours-item d-flex">
-                        {{$franchise->investment_value}}
+                    حجم الاستثمار للوحده : {{$franchise->investment_value}}
                     </li>
                     <li class="list-unstyled-item list-hours-item d-flex">
-                       {{$franchise->solvency}}
+                    هل تتوفر الملائه الماليه لقيمة الاستثمار؟ : 
+                    @if($franchise->solvency == 0)
+                    لا تتوفر
+                    @else
+                    تتوفر
+                    @endif
                     </li>
                     <li class="list-unstyled-item list-hours-item d-flex">
-                         {{$franchise->date}}
+                    الموعد المقترح لبدء العمل : {{$franchise->date}}
                     </li>
 
                     <li class="list-unstyled-item list-hours-item d-flex">
-                         {!! nl2br( $franchise->reason_franchise )!!}
+                    ماهو سبب اهتمامك بالامتياز التجاري :  {!! nl2br( $franchise->reason_franchise )!!}
                     </li>
                     <li class="list-unstyled-item list-hours-item d-flex">
-                         {!! nl2br( $franchise->know_us )!!}
+                    كيف سمعت او تعرفت علينا : {!! nl2br( $franchise->know_us )!!}
                     </li>
                 </ul>
             </div>

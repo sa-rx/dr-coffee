@@ -5,8 +5,8 @@
 @section('content')
 
 <div class="container">
-    <a  class=" btn btn-outline-light mx-auto mb-2" href="{{route('courses.create')}}"><i class="fas fa-plus-square"></i>  اضافة كورس </a>
-    <table class="table table-striped table-light table-hover  ">
+    <a  style=" color: #98a175; "  class=" btn btn-outline-light mx-auto mb-2" href="{{route('courses.create')}}"><i class="fas fa-plus-square"></i>  اضافة كورس </a>
+    <table  style=" color: #98a175; "  class="table table-striped table-light table-hover  ">
         <thead  class="">
             <tr>
                 <th scope="col">الاسم</th>

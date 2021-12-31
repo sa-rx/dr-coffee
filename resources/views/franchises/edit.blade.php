@@ -14,7 +14,7 @@
                 </div>
             <div class="row justify-content-center">
                 <div class="col-md-12">
-                    <div class="card" style="background-color: #4040406b;">
+                    <div class="card" style="background-color: #98a175;">
                         <div class="card-body">
                             <form action="{{route('franchises.update',$franchise)}}" method="post">
                                 <div class="row">
@@ -56,7 +56,7 @@
                                     </div> 
 
                                     <div class="form-group col-md-6">
-                                        <label for="area">المنطقة المقترحة لبدء امتياز 1k </label>
+                                        <label for="area">المنطقة المقترحة لبدء الامتياز  </label>
                                         <input type="text" name="area" class="form-control" @isset($franchise) value="{{$franchise->area}}" @endisset>
                                     </div>
                                     

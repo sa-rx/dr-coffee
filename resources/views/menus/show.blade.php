@@ -7,11 +7,11 @@
 
 
 
-
  
-<div class="container">
-    <div class="alert alert-light" role="alert">
-        <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+
+<div class="container "  data-aos="fade-up">
+    <div class="alert alert-light section-bg rounded" role="alert">
+        <ul style="    color: #f1e4c6;" class="list-unstyled list-hours mb-5 text-left mx-auto">
             <li class="list-unstyled-item list-hours-item d-flex">
                 <h3>{{$menu->name}}</h3>
             </li>
@@ -25,7 +25,7 @@
             </li>
 
             <li class="list-unstyled-item list-hours-item d-flex">
-                <h6>  سعره حراريه  {{$menu->calories}}</h6>
+                <h6> {{$menu->calories}}   سعره حراريه </h6>
             </li>
 
             <li class="list-unstyled-item list-hours-item d-flex">
@@ -33,7 +33,7 @@
             </li>
 
             <li class="list-unstyled-item list-hours-item d-flex">
-                <h6>{!! nl2br( $menu->content )!!}</h6>
+                <h6> المحتوى | {!! nl2br( $menu->content )!!}</h6>
             </li>
 
             @if($menu->available == 1)

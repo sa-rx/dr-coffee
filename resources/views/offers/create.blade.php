@@ -9,7 +9,7 @@
 
     <div class="row justify-content-center">
         <div class="col-md-12">
-            <div class="card" style="background-color: #4040406b;">
+            <div class="card" style="background-color: #98a175;">
                 <div class="card-body">
                     <form class="" action="{{route('offers.store')}}" method="post">
                     @csrf

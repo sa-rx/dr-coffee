@@ -9,7 +9,7 @@
 <section id="testimonials" class="testimonials section-bg container rounded">
     <div class="container" data-aos="fade-up">
         @forelse($opinions as $opinion)
-            <div class="alert alert-light container" role="alert">
+            <div style=" background-color: #f1e4c6; color: #768856;" class="alert alert-light container" role="alert">
                 <h3 style="color: #768856;">{{$opinion->name}}</h3>
                 <p style="color: #122c14;">{{$opinion->content}}</p>  
                 <hr>

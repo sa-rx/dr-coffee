@@ -57,9 +57,9 @@
 
           <div class="menu-content">
             @if(isset($menu->offer_price))
-              <a href="{{route('menu.show',$menu)}}">{{$menu->name}}</a><span><s class="text-danger">{{$menu->price}}</s> ${{$menu->offer_price}}</span>
+              <a href="{{route('menu.show',$menu)}}"> {{ $menu->name }} </a><span><s class="text-danger">{{$menu->price}}</s> {{$menu->offer_price}} ريال</span>
             @else
-              <a href="#">{{$menu->name}}</a><span>${{$menu->price}}</span>
+              <a href="#">{{ $menu->name }}</a><span>{{$menu->price}} ريال</span>
             @endif
           </div>
           <div class="menu-ingredients">
@@ -95,7 +95,7 @@
               <div class=" content " style="margin: 11px 30px 0 0;">
                 <h3>{{$offer->title}}</h3>
                 <div class="price">
-                  <p><span>${{$offer->price}}</span></p>
+                  <p><span>{{$offer->price}} ريال</span></p>
                 </div>
                 <p class="fst-italic">
                   {!! nl2br( $offer->content )!!}

@@ -8,8 +8,11 @@
 
 <section id="testimonials" class="testimonials section-bg">
     <div class="container" data-aos="fade-up">
+            <div  class="pull-left">
+                <h2> الاراء</h2>
+            </div>
         @forelse($opinions as $opinion)
-            <div class="alert alert-light container" role="alert">
+            <div  style=" background-color: #f1e4c6; color: #768856;" class="alert container" role="alert">
                 <h3>{{$opinion->name}}</h3>
                 <p>{{$opinion->content}}</p>  
                 <hr>

@@ -5,14 +5,14 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
+            <div  style=" color: #122c14;" class="pull-left">
                 <h2>ادارة المستخدمين</h2>
             </div>
-        <div class="pull-right">
-            @can('اضافة مستخدم')
-            <a class="btn btn-success" href="{{ route('users.create') }}">انشاء مستخدم</a>
-            @endcan 
-        </div>
+            <div class="pull-right">
+                @can('اضافة مستخدم')
+                <a class="btn btn-success" href="{{ route('users.create') }}">انشاء مستخدم</a>
+                @endcan 
+            </div>
     </div>
 </div>
 
@@ -22,7 +22,7 @@
 </div>
 @endif
 
-<table class="table table-light table-responsive-xl table-hover  ">
+<table  style=" color: #98a175; "  class="table table-light table-responsive-xl table-hover  ">
     <tr>
         <th>#</th>
         <th>الاسم</th>
