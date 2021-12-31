@@ -14,7 +14,7 @@
                 </div>
             <div class="row justify-content-center">
                 <div class="col-md-12">
-                    <div class="card" style="background-color: #4040406b;">
+                    <div class="card" style="background-color: #768856;">
                         <div class="card-body">
                             <form action="{{route('franchises.store')}}" method="post">
                                 <div class="row">
