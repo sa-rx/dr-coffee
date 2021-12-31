@@ -6,7 +6,7 @@
 
 
 <!-- ======= Contact Section ======= -->
-<section id="contact" class="contact">
+<section id="contact" class="contact ">
     <div class="container" data-aos="fade-up">
             <div class="section-title">
                 <h2>تواصل معنا</h2>
@@ -14,49 +14,49 @@
                 <div class="row ">         
                     <div class="col-md-3">
                         <a href="#demo" data-toggle="collapse">
-                            <h1  class="text-center  text-secondary"><button  style=" color: #767676;  border-color: #767676; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-phone-square fa-2x"></i> </button>  </h1>
+                            <h1  class="text-center  text-secondary"><button  style=" color: #98a175;  border-color: #98a175; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-phone-square fa-2x"></i> </button>  </h1>
                         </a>
                         <div id="demo" class="collapse">
-                            <p class="text-center" >{{$about->number}}  </p>
+                            <p class="text-center"  style=" color: #98a175;  border-color: #98a175" >{{$about->number}}  </p>
                         </div>
                     </div>
 
                     <div class="col-md-3">
                         <a href="#demo" data-toggle="collapse">
-                            <h1 class="text-center  text-secondary">  <button style=" color: #767676;  border-color: #767676" class="btn  btn-outline-light btn-lg">  <i class="fab fa-instagram fa-2x"></i>   </button> </h1>
+                            <h1 class="text-center  text-secondary">  <button style=" color: #98a175;  border-color: #98a175" class="btn  btn-outline-light btn-lg">  <i class="fab fa-instagram fa-2x"></i>   </button> </h1>
                         </a>
                         <div id="demo" class="collapse">
-                            <p class="text-center"><a   target="_blank" class="text-center " href="https://www.instagram.com/{{$about->inst}}">  {{$about->inst}}   </a> </p>
+                            <p  class="text-center"><a   style=" color: #98a175;  border-color: #98a175"  target="_blank" class="text-center " href="https://www.instagram.com/{{$about->inst}}">  {{$about->inst}}   </a> </p>
                         </div>
                     </div>
 
 
                     <div class="col-md-3">
                         <a href="#demo" data-toggle="collapse">
-                           <h1 class="text-center  text-secondary">  <button style=" color: #767676;  border-color: #767676" class="btn  btn-outline-light btn-lg">  <i class="fab fa-snapchat fa-2x"></i>  </button>   </h1>
+                           <h1 class="text-center  text-secondary">  <button style=" color: #98a175;  border-color: #98a175" class="btn  btn-outline-light btn-lg">  <i class="fab fa-snapchat fa-2x"></i>  </button>   </h1>
                         </a>
                         <div id="demo" class="collapse">
-                            <p class="text-center"><a  target="_blank" class="text-center "  href="http://story.snapchat.com/u/{{$about->snap}}"> {{$about->snap}}</a></p>
+                            <p class="text-center"><a  style=" color: #98a175;  border-color: #98a175" target="_blank" class="text-center "  href="http://story.snapchat.com/u/{{$about->snap}}"> {{$about->snap}}</a></p>
                         </div>
                      </div>
 
 
                     <div class="col-sm-3">
                         <a href="#demo" data-toggle="collapse">
-                            <h1 class="text-center  text-secondary">  <button style=" color: #767676;  border-color: #767676" class="btn  btn-outline-light btn-lg">   <i class="fas fa-map-marker-alt fa-2x"></i>   </button>   </h1>
+                            <h1 class="text-center  text-secondary">  <button style=" color: #98a175;  border-color: #98a175" class="btn  btn-outline-light btn-lg">   <i class="fas fa-map-marker-alt fa-2x"></i>   </button>   </h1>
                         </a>
                         <div id="demo" class="collapse">
-                            <p class="text-center">{{$about->address}}</p>
-                            <p class="text-center"><a   target="_blank" class="text-center  " href="{{$about->location}}">موقع المقهى</a></p>
+                            <p  style=" color: #98a175;  border-color: #98a175" class="text-center">{{$about->address}}</p>
+                            <p class="text-center"><a  style=" color: #98a175;  border-color: #98a175"  target="_blank" class="text-center  " href="{{$about->location}}">موقع المقهى</a></p>
                         </div>
                     </div>
             </div>
                 <br><br><br>
                 <div class="cta-inner bg-faded text-center rounded">
                     <div class="row ">
-                            <b class="mb-0">  اوقات العمل</b>
+                            <b  style=" color: #122c14;  border-color: #98a175" class="mb-0">  اوقات العمل</b>
                         <div class="alert  col-md-12" role="alert">
-                            <h6 class="mb-0">  {!! nl2br( $about->worktime )!!}</h6>
+                            <h6  style=" color: #98a175;  border-color: #98a175" class="mb-0">  {!! nl2br( $about->worktime )!!}</h6>
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12">
-                <div class="card" style="background-color: #4040406b;">
+                <div class="card" style="background-color: #768856;">
                     <div class="card-header"><h3>رسالتك</h3></div>
 
                         <div class="card-body">

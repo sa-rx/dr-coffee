@@ -22,7 +22,7 @@
         @else
 
 
-          <div class="col-lg-12">
+          <div class="col-lg-12 rounded" >
             <div class="box container" data-aos="zoom-in" data-aos-delay="100">
               <span> <a  href="{{route('course.show',$course)}}">{{$course->name}} </a></span>
               <h4> {!! nl2br( $course->content )!!}</h4>
@@ -36,7 +36,7 @@
               <p>يبدأ الكورس في {{$course->date}}</p>
 
 
-              <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapse{{$course->id}}" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#collapse{{$course->id}}" role="button" aria-expanded="false" aria-controls="collapseExample">
               سجل الان
               </a>
               
@@ -78,7 +78,7 @@
                                     <br>
                                     <br>
                                 <div class="form-group">
-                                        <button class="btn btn btn-outline-light"> ارسال <i class="fas fa-paper-plane"></i>   </button>
+                                        <button class="btn btn-outline-light"> ارسال <i class="fas fa-paper-plane"></i>   </button>
                                 </div>
                             </div>
                         </form>

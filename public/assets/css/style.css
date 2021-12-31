@@ -10,7 +10,9 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  background: url("../img/patterns-b.jpg") center center;
+  background-color: #f1e4c6;
+
+   /*background: url("../img/patterns-b.jpg") center center;*/
   background-size: cover;
   position: relative;
   background-attachment: fixed;
@@ -20,7 +22,7 @@ body {
 }
 
 a {
-  color: #888282;
+  color: #efe2c4;
   text-decoration: none;
 }
 
@@ -165,16 +167,14 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgba(12, 11, 9, 0.6);
-  border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+  background: #768856;
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
 }
 #header.header-scrolled {
   top: 0;
-  background: rgba(0, 0, 0, 0.85);
-  border-bottom: 1px solid #37332a;
+  background: #768856b8;
 }
 #header .logo {
   font-size: 28px;
@@ -362,10 +362,10 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #1a1814;
+  color: #80955c;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #cda45e;
+  color: #122c14;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -590,7 +590,7 @@ section {
 }
 
 .section-bg {
-  background-color: #fdfdfd1f;
+  background-color: #768856;
 }
 
 .section-title {
@@ -604,7 +604,7 @@ section {
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaaaaa;
+  color: #f1e4c6;
   font-family: "Poppins", sans-serif;
 }
 .section-title h2::after {
@@ -763,7 +763,7 @@ section {
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
-  background: #4e4d4d6b;
+  background: #768856;
 }
 .why-us .box span {
   display: block;
@@ -779,18 +779,18 @@ section {
   color: rgb(249 249 249 / 40%)
 }
 .why-us .box p {
-  color: rgb(249 249 249 / 40%);
+  color: #f1e4c6;
   font-size: 15px;
   margin: 0;
   padding: 0;
 }
 .why-us .box:hover {
-  background: #ffffff2e;
+  background: #122c14;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 .why-us .box:hover span, .why-us .box:hover h4, .why-us .box:hover p {
-  color: #fff;
+  color: #768856;
 }
 
 /*--------------------------------------------------------------
@@ -817,7 +817,7 @@ section {
   font-family: "Playfair Display", serif;
 }
 .menu #menu-flters li:hover, .menu #menu-flters li.filter-active {
-  color: #000000;
+  color: #122c14;
 }
 .menu #menu-flters li:last-child {
   margin-right: 0;
@@ -850,23 +850,23 @@ section {
 }
 .menu .menu-content a {
   padding-right: 10px;
-  background: #1a1814;
+  background: #f1e4c6;
   position: relative;
   z-index: 3;
   font-weight: 700;
-  color: white;
+  color: #1e2c1b;
   transition: 0.3s;
 }
 .menu .menu-content a:hover {
   color: #cda45e;
 }
 .menu .menu-content span {
-  background: #1a1814;
+  background: #f1e4c6;
   position: relative;
   z-index: 3;
   padding: 0 10px;
   font-weight: 600;
-  color: #767573;
+  color: #1e2c1b;
 }
 .menu .menu-ingredients {
   margin-left: 85px;
@@ -946,7 +946,7 @@ section {
   bottom: 0;
 }
 .events .section-title h2 {
-  color: #fff;
+  color: #122c14;
 }
 .events .container {
   position: relative;

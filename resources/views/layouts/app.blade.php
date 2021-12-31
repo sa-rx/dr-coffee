@@ -85,8 +85,9 @@
             <li><a class="nav-link" href="{{ route('stores.index') }}">المتجر</a></li>
             <li><a class="nav-link" href="{{ route('contacts.create') }}">تواصل معنا</a></li>
             <li><a class="nav-link scrollto" href="{{ route('opinions.create') }}">الاراء</a></li>
-            <li><a class="nav-link scrollto" href="{{ route('certificates.create') }}">إصدار الشهادات</a></li>
             <li><a class="nav-link scrollto" href="{{ route('course.index') }}">الكورسات</a></li>
+            <li><a class="nav-link scrollto" href="{{ route('events.create') }}">تنظيم فعاليه</a></li>
+
 
             
             @can('لوحة التحكم')

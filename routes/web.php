@@ -42,6 +42,8 @@ Route::resource('products','App\Http\Controllers\ProductController');
 Route::resource('certificates','App\Http\Controllers\CertificateController');
 Route::resource('courses','App\Http\Controllers\CourseController');
 Route::resource('participations','App\Http\Controllers\ParticipationController');
+Route::resource('events','App\Http\Controllers\EventController');
+Route::resource('franchises','App\Http\Controllers\FranchiseController');
 
 
 

@@ -15,7 +15,7 @@
           <img src="assets/img/dr.jpg" alt="">
         </div>
       </div>
-      <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+      <div style="color: #122c14;" class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
         <h3>{{ config('app.name') }}</h3>
         <p class="fst-italic">
           {!! nl2br( $about->content )!!}
@@ -29,7 +29,7 @@
 
     
 <!-- ======= Menu Section ======= -->
-<section id="menu" class="menu container section-bg border border-dark rounded">
+<section id="menu" class="menu container section-bg  rounded">
   <div class="container" data-aos="fade-up">
     <div class="section-title">
       <h2>المنيو</h2>
@@ -48,7 +48,7 @@
       </div>
     </div>
 
-    <div class="row menu-container border border-secondary rounded" data-aos="fade-up" data-aos-delay="200">
+    <div class="row menu-container " data-aos="fade-up" data-aos-delay="200">
 
       @forelse($menus as $menu)
 
@@ -87,7 +87,7 @@
     <div class="section-title">
       <h2>العروض</h2>
     </div>
-    <div class="events-slider swiper border border-secondary rounded container" data-aos="fade-up" data-aos-delay="100">
+    <div style="background-color: #768856; " class="events-slider swiper border border-secondary rounded container" data-aos="fade-up" data-aos-delay="100">
       <div class="swiper-wrapper ">
         @forelse($offers as $offer)
           <div class="swiper-slide ">

@@ -48,11 +48,11 @@
                             </div>
 
                             <div class="col-md-6">
-                                <a href="{{route('certificates.index')}}" >
-                                    <h1  class="text-center  text-secondary"><button  style=" color: #060000;  border-color: #060000; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-certificate fa-2x"></i> </button>  </h1>
+                                <a href="{{route('events.index')}}" >
+                                    <h1  class="text-center  text-secondary"><button  style=" color: #060000;  border-color: #060000; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-calendar-check fa-2x"></i> </button>  </h1>
                                 </a>
                                 <div id="demo" >
-                                    <p class="text-center" >بيانات إصدار الشهادات </p>
+                                    <p class="text-center" >تنظيم الفعاليات </p>
                                 </div>
                             </div>
 
@@ -127,3 +127,4 @@
 </section>
 
 @endsection
+
