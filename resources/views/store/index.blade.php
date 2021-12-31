@@ -11,7 +11,7 @@
 <section id="why-us" class="why-us">
   <div class="container" data-aos="fade-up">
     <div class="section-title">
-      <h2>منتجاتنا</h2>
+      <h2 style="color: #768856;">منتجاتنا</h2>
     </div>
 
     <div class="row">

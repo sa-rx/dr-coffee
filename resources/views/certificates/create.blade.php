@@ -9,6 +9,9 @@
 <section id="contact" class="contact">
     <div class="container" data-aos="fade-up">
         <div class="container">
+        <div class="section-title">
+                     <h2 style="color: #768856;">اصدار الشهادات</h2>
+                </div>
             <div class="row justify-content-center">
                 <div class="col-md-12">
                     <div class="card" style="background-color: #98a175;">
