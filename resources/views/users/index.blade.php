@@ -9,9 +9,9 @@
                 <h2>ادارة المستخدمين</h2>
             </div>
             <div class="pull-right">
-                  <!--@can('اضافة مستخدم')-->
+                @can('اضافة مستخدم')
                 <a class="btn btn-success" href="{{ route('users.create') }}">انشاء مستخدم</a>
-                  <!--@endcan -->
+                @endcan 
             </div>
     </div>
 </div>
@@ -43,18 +43,19 @@
                 @endif
                 </td>
                 <td>
-                <!-- ======= Menu Section ======= -->
-                 <!--@can('اضافة مستخدم')-->
+                 @can('اضافة مستخدم')
                 <a class="btn btn-info" href="{{ route('users.show',$user->id) }}">عرض</a>
-                 <!--@endcan -->
-                 <!--@can('اضافة مستخدم')-->
+                 @endcan 
+                 
+                 @can('اضافة مستخدم')
                 <a class="btn btn-primary" href="{{ route('users.edit',$user->id) }}">تعديل</a>
-                 <!--@endcan -->
-                 <!--@can('اضافة مستخدم')-->
+                 @endcan
+
+                 @can('اضافة مستخدم')
                 {!! Form::open(['method' => 'DELETE','route' => ['users.destroy', $user->id],'style'=>'display:inline']) !!}
                 {!! Form::submit('حذف', ['class' => 'btn btn-danger']) !!}
                 {!! Form::close() !!}
-                <!-- @endcan -->
+                 @endcan 
                 </td>
             </tr>
         @endforeach
