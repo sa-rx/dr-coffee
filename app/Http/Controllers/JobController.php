@@ -44,6 +44,15 @@ class JobController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'name'=>'required',
+            'number'=>'required',
+            'age'=>'required',
+            'sex'=>'required',
+            'previous_experience'=>'required'
+        ]);
+
+
         $job = new Job();
         $job->create($request->all());
         return redirect()->back()->with('message','تمت ارسال البيانات بنجاح');
