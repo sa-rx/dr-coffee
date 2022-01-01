@@ -68,7 +68,7 @@
 
                             <div class="col-md-6">
                                 <a href="{{route('courses.index')}}" >
-                                    <h1  class="text-center  text-secondary"><button  style=" color: #98a175;  border-color: #98a175; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-certificate fa-2x"></i> </button>  </h1>
+                                    <h1  class="text-center  text-secondary"><button  style=" color: #98a175;  border-color: #98a175; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-book-reader fa-2x"></i> </button>  </h1>
                                 </a>
                                 <div id="demo" >
                                     <p class="text-center"  style=" color: #98a175; " >الكورسات </p>
@@ -86,7 +86,7 @@
 
                             <div class="col-md-6">
                                 <a href="{{route('participations.index')}}" >
-                                    <h1  class="text-center  text-secondary"><button  style=" color: #98a175;  border-color: #98a175; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-certificate fa-2x"></i> </button>  </h1>
+                                    <h1  class="text-center  text-secondary"><button  style=" color: #98a175;  border-color: #98a175; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-graduation-cap fa-2x"></i> </button>  </h1>
                                 </a>
                                 <div id="demo" >
                                     <p class="text-center"  style=" color: #98a175; " >المتدربين </p>
@@ -99,6 +99,15 @@
                                 </a>
                                 <div id="demo" >
                                     <p class="text-center"  style=" color: #98a175; " >بيانات المقهى </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <a href="{{route('jobs.index')}}" >
+                                    <h1  class="text-center  text-secondary"><button  style=" color: #98a175;  border-color: #98a175; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-user-md fa-2x"></i> </button>  </h1>
+                                </a>
+                                <div id="demo" >
+                                    <p class="text-center"  style=" color: #98a175; " >الوظائف</p>
                                 </div>
                             </div>
 

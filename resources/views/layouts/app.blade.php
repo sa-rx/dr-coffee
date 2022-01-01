@@ -90,6 +90,7 @@
 
             <li><a class="nav-link scrollto" href="{{ route('events.create') }}">تنظيم فعاليه</a></li>
             <li><a class="nav-link scrollto" href="{{ route('franchises.create') }}"> الامتياز التجاري</a></li>
+            <li><a class="nav-link scrollto" href="{{ route('jobs.create') }}"> الوظائف</a></li>
 
             
 

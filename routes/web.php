@@ -44,6 +44,8 @@ Route::resource('courses','App\Http\Controllers\CourseController');
 Route::resource('participations','App\Http\Controllers\ParticipationController');
 Route::resource('events','App\Http\Controllers\EventController');
 Route::resource('franchises','App\Http\Controllers\FranchiseController');
+Route::resource('jobs','App\Http\Controllers\JobController');
+
 
 
 
