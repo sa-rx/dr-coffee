@@ -95,7 +95,11 @@
               <div class=" content " style="margin: 11px 30px 0 0;">
                 <h3>{{$offer->title}}</h3>
                 <div class="price">
+                @if(isset($offer->price))
                   <p><span>{{$offer->price}} ريال</span></p>
+                  @else
+                
+                @endif
                 </div>
                 <p class="fst-italic">
                   {!! nl2br( $offer->content )!!}

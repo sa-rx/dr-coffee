@@ -10,6 +10,14 @@
 
                 @csrf
                 <div class="form-group col-md-6">
+                    <label for="email">الايميل</label>
+                    <input type="email" name="email" class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="tiktok">تيك توك</label>
+                    <input type="text" name="tiktok" class="form-control">
+                </div>
+                <div class="form-group col-md-6">
                     <label for="snap">السناب</label>
                     <input type="text" name="snap" class="form-control">
                 </div>

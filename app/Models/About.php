@@ -16,7 +16,9 @@ class About extends Model
         'location',
         'address',
         'content',
-        'worktime'
+        'worktime',
+        'tiktok',
+        'email'
  
     ];
 

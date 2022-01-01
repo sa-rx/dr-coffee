@@ -8,19 +8,53 @@
 <!-- ======= Contact Section ======= -->
 <section id="contact" class="contact ">
     <div class="container" data-aos="fade-up">
-            <div class="section-title">
-                <h2>تواصل معنا</h2>
+            <div  class="section-title">
+                <h2 style=" color: #98a175;" >تواصل معنا</h2>
             </div> 
                 <div class="row ">         
+                   
+                    
+                @if(isset($about->email))
                     <div class="col-md-3">
                         <a href="#demo" data-toggle="collapse">
-                            <h1  class="text-center  text-secondary"><button  style=" color: #98a175;  border-color: #98a175; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-phone-square fa-2x"></i> </button>  </h1>
+                            <h1  class="text-center  text-secondary"><button  style=" color: #98a175;  border-color: #98a175; "  class="btn  btn-outline-light btn-lg">   <i class="fas fa-envelope fa-2x"></i> </button>  </h1>
+                        </a>
+                        <div id="demo" class="collapse">
+                            <p class="text-center"  style=" color: #98a175;  border-color: #98a175" > <a  style=" color: #98a175;  border-color: #98a175"  target="_blank"  href=" {{$about->email}} "> {{$about->email}} </a> </p>
+                        </div>
+                    </div>
+                @else
+                
+                @endif
+
+                @if(isset($about->number))
+                    <div class="col-md-3">
+                        <a href="#demo" data-toggle="collapse">
+                            <h1  class="text-center  text-secondary"><button  style=" color: #98a175;  border-color: #98a175; "  class="btn  btn-outline-light btn-lg">  <i class="fas fa-phone-square fa-2x"></i> </button>  </h1>
                         </a>
                         <div id="demo" class="collapse">
                             <p class="text-center"  style=" color: #98a175;  border-color: #98a175" >{{$about->number}}  </p>
                         </div>
                     </div>
+                
+                @else
+                
+                @endif
+                    
+                @if(isset($about->tiktok))
+                   <div class="col-md-3">
+                        <a href="#demo" data-toggle="collapse">
+                            <h1  class="text-center  text-secondary"><button  style=" color: #98a175;  border-color: #98a175; "  class="btn  btn-outline-light btn-lg"> <i class="fas fa-phone-square fa-2x"></i> </button>  </h1>
+                        </a>
+                        <div id="demo" class="collapse">
+                            <p class="text-center"  style=" color: #98a175;  border-color: #98a175" > <a style=" color: #98a175;  border-color: #98a175"  target="_blank" href="">{{$about->tiktok}} </a>  </p>
+                        </div>
+                    </div>
+                @else
+                
+                @endif
 
+                @if(isset($about->inst))
                     <div class="col-md-3">
                         <a href="#demo" data-toggle="collapse">
                             <h1 class="text-center  text-secondary">  <button style=" color: #98a175;  border-color: #98a175" class="btn  btn-outline-light btn-lg">  <i class="fab fa-instagram fa-2x"></i>   </button> </h1>
@@ -30,7 +64,13 @@
                         </div>
                     </div>
 
+                @else
+                
+                @endif
 
+
+
+                @if(isset($about->snap))
                     <div class="col-md-3">
                         <a href="#demo" data-toggle="collapse">
                            <h1 class="text-center  text-secondary">  <button style=" color: #98a175;  border-color: #98a175" class="btn  btn-outline-light btn-lg">  <i class="fab fa-snapchat fa-2x"></i>  </button>   </h1>
@@ -39,8 +79,10 @@
                             <p class="text-center"><a  style=" color: #98a175;  border-color: #98a175" target="_blank" class="text-center "  href="http://story.snapchat.com/u/{{$about->snap}}"> {{$about->snap}}</a></p>
                         </div>
                      </div>
-
-
+                     @else
+                
+                @endif
+                @if(isset($about->address))
                     <div class="col-sm-3">
                         <a href="#demo" data-toggle="collapse">
                             <h1 class="text-center  text-secondary">  <button style=" color: #98a175;  border-color: #98a175" class="btn  btn-outline-light btn-lg">   <i class="fas fa-map-marker-alt fa-2x"></i>   </button>   </h1>
@@ -50,8 +92,13 @@
                             <p class="text-center"><a  style=" color: #98a175;  border-color: #98a175"  target="_blank" class="text-center  " href="{{$about->location}}">موقع المقهى</a></p>
                         </div>
                     </div>
+
+                    @else
+                
+                @endif
             </div>
                 <br><br><br>
+                @if(isset($about->worktime))
                 <div class="cta-inner bg-faded text-center rounded">
                     <div class="row ">
                             <b  style=" color: #122c14;  border-color: #98a175" class="mb-0">  اوقات العمل</b>
@@ -60,6 +107,9 @@
                         </div>
                     </div>
                 </div>
+                @else
+                
+                @endif
         </div>
     </div>
 

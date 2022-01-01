@@ -13,6 +13,18 @@
                         @csrf
                         @method('PATCH')
                         <div class="row">
+
+                            <div class="form-group col-md-6">
+                                <label for="email">الايميل</label>
+                                <input type="email" name="email" class="form-control"  @isset($about) value="{{$about->email}}" @endisset>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="tiktok">تيك توك</label>
+                                <input type="text" name="tiktok" class="form-control"  @isset($about) value="{{$about->tiktok}}" @endisset>
+                            </div>
+
+
                             <div class="form-group col-md-6">
                                 <label for="snap">سناب</label>
                                 <input type="text" name="snap" class="form-control"  @isset($about) value="{{$about->snap}}" @endisset>
