@@ -7,6 +7,15 @@ use Illuminate\Http\Request;
 
 class ParticipationController extends Controller
 {
+
+    function __construct()
+    {
+        $this->middleware('permission:المتدربين', ['only' => ['index']]);
+        $this->middleware('permission:عرض المتدربين', ['only' => ['show']]);
+        $this->middleware('permission:تعديل المتدربين', ['only' => ['edit','update']]);
+        $this->middleware('permission:حذف المتدربين', ['only' => ['destroy']]);
+    }
+
     /**
      * Display a listing of the resource.
      *

@@ -9,6 +9,17 @@ use Illuminate\Http\Request;
 
 class CourseController extends Controller
 {
+
+    function __construct()
+    {
+        $this->middleware('permission:الكورسات', ['only' => ['index']]);
+        $this->middleware('permission:اضافة كورس', ['only' => ['create','store']]);
+        $this->middleware('permission:عرض الكورس', ['only' => ['show']]);
+        $this->middleware('permission:تعديل الكورس', ['only' => ['edit','update']]);
+        $this->middleware('permission:حذف الكورس', ['only' => ['destroy']]);
+    }
+
+
     /**
      * Display a listing of the resource.
      *

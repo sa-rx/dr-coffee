@@ -7,6 +7,16 @@ use Illuminate\Http\Request;
 
 class FranchiseController extends Controller
 {
+
+    function __construct()
+    {
+        $this->middleware('permission:الامتياز التجاري', ['only' => ['index']]);
+        $this->middleware('permission:عرض الامتياز', ['only' => ['show']]);
+        $this->middleware('permission:تعديل الامتياز', ['only' => ['edit','update']]);
+        $this->middleware('permission:حذف الامتياز', ['only' => ['destroy']]);
+    }
+
+
     /**
      * Display a listing of the resource.
      *
