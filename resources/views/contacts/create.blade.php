@@ -44,10 +44,10 @@
                 @if(isset($about->tiktok))
                    <div class="col-md-3">
                         <a href="#demo" data-toggle="collapse">
-                            <h1  class="text-center  text-secondary"><button  style=" color: #98a175;  border-color: #98a175; "  class="btn  btn-outline-light btn-lg"> <i class="fas fa-phone-square fa-2x"></i> </button>  </h1>
+                            <h1  class="text-center  text-secondary"><button  style=" color: #98a175;  border-color: #98a175; "  class="btn  btn-outline-light btn-lg"> <i>TikTok</i> </button>  </h1>
                         </a>
                         <div id="demo" class="collapse">
-                            <p class="text-center"  style=" color: #98a175;  border-color: #98a175" > <a style=" color: #98a175;  border-color: #98a175"  target="_blank" href="">{{$about->tiktok}} </a>  </p>
+                            <p class="text-center"  style=" color: #98a175;  border-color: #98a175" > <a style=" color: #98a175;  border-color: #98a175"  target="_blank" href="https://vm.tiktok.com/ZSeH5QUTs/">{{$about->tiktok}} </a>  </p>
                         </div>
                     </div>
                 @else
