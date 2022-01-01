@@ -46,7 +46,7 @@ class JobController extends Controller
     {
         $job = new Job();
         $job->create($request->all());
-        redirect()->back()->with('message','تمت ارسال البيانات بنجاح');
+        return redirect()->back()->with('message','تمت ارسال البيانات بنجاح');
     }
 
     /**
