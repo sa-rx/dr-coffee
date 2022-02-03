@@ -108,7 +108,13 @@
             </div>
           </div><!-- End testimonial item -->
         @empty
-            <p></p>
+        <div class="swiper-slide ">
+            <div class="row event-item">
+              <div class=" content " style="margin: 11px 30px 0 0;">
+                <h3>لا توجد عروض</h3>
+              </div>
+            </div>
+          </div>
         @endforelse    
       </div>
       <div class="swiper-pagination"></div>
