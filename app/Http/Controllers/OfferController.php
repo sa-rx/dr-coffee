@@ -48,12 +48,7 @@ class OfferController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-
-            'name'=>'required',
-            'price'=>'required'
-        ]);
-
+       
 
         $offer = new Offer();
         $offer->create($request->all());
