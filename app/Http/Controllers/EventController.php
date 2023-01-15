@@ -10,10 +10,10 @@ class EventController extends Controller
 
     function __construct()
     {
-        $this->middleware('permission:تنظيم الفعاليات', ['only' => ['index']]);
-        $this->middleware('permission:عرض الفعاليات', ['only' => ['show']]);
-        $this->middleware('permission:تعديل الفعاليات', ['only' => ['edit','update']]);
-        $this->middleware('permission:حذف الفعاليات', ['only' => ['destroy']]);
+      //  $this->middleware('permission:تنظيم الفعاليات', ['only' => ['index']]);
+      //  $this->middleware('permission:عرض الفعاليات', ['only' => ['show']]);
+      //  $this->middleware('permission:تعديل الفعاليات', ['only' => ['edit','update']]);
+      //  $this->middleware('permission:حذف الفعاليات', ['only' => ['destroy']]);
     }
 
 

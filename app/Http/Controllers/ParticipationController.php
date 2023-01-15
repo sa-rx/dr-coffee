@@ -10,10 +10,10 @@ class ParticipationController extends Controller
 
     function __construct()
     {
-        $this->middleware('permission:المتدربين', ['only' => ['index']]);
-        $this->middleware('permission:عرض المتدربين', ['only' => ['show']]);
-        $this->middleware('permission:تعديل المتدربين', ['only' => ['edit','update']]);
-        $this->middleware('permission:حذف المتدربين', ['only' => ['destroy']]);
+      //  $this->middleware('permission:المتدربين', ['only' => ['index']]);
+      //  $this->middleware('permission:عرض المتدربين', ['only' => ['show']]);
+       // $this->middleware('permission:تعديل المتدربين', ['only' => ['edit','update']]);
+       // $this->middleware('permission:حذف المتدربين', ['only' => ['destroy']]);
     }
 
     /**

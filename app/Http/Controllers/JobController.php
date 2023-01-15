@@ -10,9 +10,9 @@ class JobController extends Controller
 
     function __construct()
     {
-        $this->middleware('permission:المتدربين', ['only' => ['index']]);
-        $this->middleware('permission:عرض المتدربين', ['only' => ['show']]);
-        $this->middleware('permission:حذف المتدربين', ['only' => ['destroy']]);
+       // $this->middleware('permission:المتدربين', ['only' => ['index']]);
+       // $this->middleware('permission:عرض المتدربين', ['only' => ['show']]);
+       // $this->middleware('permission:حذف المتدربين', ['only' => ['destroy']]);
     }
     /**
      * Display a listing of the resource.

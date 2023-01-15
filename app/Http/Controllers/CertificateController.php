@@ -10,9 +10,9 @@ class CertificateController extends Controller
 
     function __construct()
     {
-        $this->middleware('permission:الشهادات', ['only' => ['index']]);
-        $this->middleware('permission:عرض بيانات الشهاده', ['only' => ['show']]);
-        $this->middleware('permission:حذف بيانات الشهاده', ['only' => ['destroy']]);
+        //$this->middleware('permission:الشهادات', ['only' => ['index']]);
+       // $this->middleware('permission:عرض بيانات الشهاده', ['only' => ['show']]);
+      //  $this->middleware('permission:حذف بيانات الشهاده', ['only' => ['destroy']]);
 
     }
     /**
